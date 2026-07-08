@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio BTS SIO SISR — Sahed Arshed Ali Khan. Parcours, compétences, projets techniques et veille technologique.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sahed ARSHED ALI KHAN – Portfolio BTS SIO SISR</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">Sahed<span>.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" data-nav="nav_home">Accueil</a>
+            <a href="#parcours" data-nav="nav_parcours">Parcours</a>
+            <a href="#competences" data-nav="nav_competences">Compétences</a>
+            <a href="#entreprise" data-nav="nav_entreprise">Entreprise</a>
+            <a href="#missions" data-nav="nav_missions">Missions</a>
+            <a href="#projects" data-nav="nav_projects">Projets</a>
+            <a href="#veille" data-nav="nav_veille">Veille Tech</a>
+            <a href="#docs" data-nav="nav_docs">Documents</a>
+            <a href="#contact" data-nav="nav_contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="assets/profil-sahed.jpg" alt="Sahed Arshed Ali Khan">
+        </div>
+        <div class="home-content">
+            <p class="greeting" data-i18n="greeting">Bonjour, je suis</p>
+            <h1>Sahed Arshed<br>Ali Khan</h1>
+            <h3><span class="multiple-text"></span><span class="cursor">|</span></h3>
+            <p class="home-desc" data-i18n="home_desc">Étudiant en BTS SIO, spécialité SISR — passionné par les réseaux, l'administration système et la cybersécurité.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sahed-arshed-ali-khan-6942103b6/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Sahed-Khan" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/sahed5000a" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <a href="assets/CV_Sahed_ARSHED_ALI_KHAN.pdf" class="btn" target="_blank">
+                <i class='bx bx-download'></i> <span data-i18n="download_cv">Télécharger mon CV</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Parcours -->
+    <section class="about" id="parcours">
+        <div class="about-img">
+            <img src="assets/profil-sahed.jpg" alt="Sahed Arshed Ali Khan">
+        </div>
+        <div class="about-content">
+            <h2 class="heading"><span data-i18n="parcours_heading">Mon</span> <span data-i18n="parcours_heading_span">Parcours</span></h2>
+            <h3 data-i18n="parcours_subtitle">Étudiant BTS SIO – SISR</h3>
+            <p data-i18n="parcours_p1">Je m'appelle Sahed Arshed Ali Khan. Je suis actuellement inscrit en BTS SIO, spécialité SISR, au CFA Aurlom à Paris.</p>
+            <p data-i18n="parcours_p2">Je suis passionné par les réseaux, l'administration système et la cybersécurité.</p>
+            <p data-i18n="parcours_p3">Mon objectif : devenir administrateur systèmes et réseaux, avec une spécialisation progressive vers la cybersécurité.</p>
+            <a href="#timeline" class="btn" data-i18n="parcours_btn">Voir mon parcours académique</a>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline" id="timeline">
+        <h2 class="heading"><span data-i18n="timeline_heading">Mon</span> <span data-i18n="timeline_heading_span">Parcours Académique</span></h2>
+        <div class="timeline-container">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2026 – 2027</span>
+                    <h3 data-i18n="tl1_title">BTS SIO – SISR</h3>
+                    <span class="location"><i class='bx bx-map'></i> CFA Aurlom – Paris 75019</span>
+                    <p data-i18n="tl1_desc">En cours de formation BTS SIO – SISR.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2025 – 2026</span>
+                    <h3 data-i18n="tl2_title">BTS CIEL – Option A</h3>
+                    <span class="location"><i class='bx bx-map'></i> CFA Aurlom – Paris 75019</span>
+                    <p data-i18n="tl2_desc">Première année en BTS CIEL (Cybersécurité).</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2022 – 2025</span>
+                    <h3 data-i18n="tl3_title">BUT Mesures Physiques</h3>
+                    <span class="location"><i class='bx bx-map'></i> IUT Orsay – Gif-sur-Yvette 91190</span>
+                    <p data-i18n="tl3_desc">Programme BUT en Physique (3 ans).</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2019 – 2022</span>
+                    <h3 data-i18n="tl4_title">Baccalauréat Général</h3>
+                    <span class="location"><i class='bx bx-map'></i> Lycée Henri Wallon – Aubervilliers 93300</span>
+                    <p data-i18n="tl4_desc">Baccalauréat général, spécialités Mathématiques et Physique.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BTS SIO -->
+    <section class="bts-sio" id="bts-sio">
+        <h2 class="heading"><span data-i18n="bts_heading">BTS</span> <span data-i18n="bts_heading_span">SIO</span></h2>
+        <div class="bts-container">
+
+            <div class="bts-card main-card">
+                <div class="bts-card-icon"><i class='bx bx-laptop'></i></div>
+                <h3 data-i18n="bts_main_title">Qu'est-ce que le BTS SIO ?</h3>
+                <p data-i18n="bts_main_p1">Le BTS SIO est un diplôme de l'enseignement supérieur de deux ans, reconnu par l'État (RNCP niveau 5).</p>
+                <p data-i18n="bts_main_p2">Le programme combine connaissances théoriques et projets pratiques.</p>
+            </div>
+
+            <div class="bts-card">
+                <div class="bts-card-icon"><i class='bx bx-code-alt'></i></div>
+                <h3 data-i18n="bts_slam_title">Option SLAM</h3>
+                <p data-i18n="bts_slam_p">Solutions Logicielles et Applications Métiers.</p>
+            </div>
+
+            <div class="bts-card highlight-card">
+                <div class="bts-card-icon"><i class='bx bx-network-chart'></i></div>
+                <h3><span data-i18n="bts_sisr_title">Option SISR</span> <span class="badge" data-i18n="bts_sisr_badge">Ma spécialité</span></h3>
+                <p data-i18n="bts_sisr_p">Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="skills" id="competences">
+        <h2 class="heading"><span data-i18n="competences_heading">Mes</span> <span data-i18n="competences_heading_span">Compétences</span></h2>
+        <p class="section-intro" data-i18n="competences_intro">Compétences rattachées au bloc « Support et mise à disposition de services informatiques » (Épreuve E5).</p>
+        <div class="skills-container">
+
+            <div class="skills-card">
+                <i class='bx bx-code-alt'></i>
+                <h3 data-i18n="skill_prog_title">Programmation</h3>
+                <p data-i18n="skill_prog_p">Maîtrise de JavaScript, C et Python.</p>
+            </div>
+
+            <div class="skills-card">
+                <i class='bx bx-globe'></i>
+                <h3 data-i18n="skill_web_title">Développement Web</h3>
+                <p data-i18n="skill_web_p">Développement d'applications web avec HTML, CSS et JavaScript.</p>
+            </div>
+
+            <div class="skills-card">
+                <i class='bx bx-data'></i>
+                <h3 data-i18n="skill_db_title">Base de données</h3>
+                <p data-i18n="skill_db_p">Connaissance des bases relationnelles et MySQL.</p>
+            </div>
+
+            <div class="skills-card">
+                <i class='bx bx-cube'></i>
+                <h3 data-i18n="skill_design_title">Logiciels & Modélisation</h3>
+                <p data-i18n="skill_design_p">Modélisation 3D avec SolidWorks. Godot Engine.</p>
+            </div>
+
+            <div class="skills-card">
+                <i class='bx bx-network-chart'></i>
+                <h3 data-i18n="skill_net_title">Réseau & Virtualisation</h3>
+                <p data-i18n="skill_net_p">VMware, pfSense, Kali Linux, Debian, Wireshark, Nmap, GLPI.</p>
+            </div>
+
+            <div class="skills-card">
+                <i class='bx bx-world'></i>
+                <h3 data-i18n="skill_lang_title">Langues</h3>
+                <p data-i18n="skill_lang_p">Bengali – natif<br>Français – natif<br>Anglais – B2</p>
+            </div>
+
+        </div>
+
+        <!-- Tableau de compétences -->
+        <div class="skills-matrix-wrap">
+            <h3 class="subheading" data-i18n="comp_table_title">Tableau de synthèse des compétences</h3>
+            <table class="skills-matrix">
+                <thead>
+                    <tr>
+                        <th data-i18n="comp_table_col1">Compétence (référentiel BTS SIO)</th>
+                        <th data-i18n="comp_table_col2">Acquise via</th>
+                        <th data-i18n="comp_table_col3">Niveau</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-i18n="comp_row1_c1">Administrer les systèmes informatiques</td>
+                        <td data-i18n="comp_row1_c2">TP Linux/Windows Server, formation</td>
+                        <td data-i18n="comp_row1_c3">En cours d'acquisition</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="comp_row2_c1">Gérer le patrimoine informatique (GLPI)</td>
+                        <td data-i18n="comp_row2_c2">Formation, projets pratiques</td>
+                        <td data-i18n="comp_row2_c3">En cours d'acquisition</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="comp_row3_c1">Répondre aux incidents et demandes d'assistance</td>
+                        <td data-i18n="comp_row3_c2">À compléter avec le stage</td>
+                        <td data-i18n="comp_row3_c3">À évaluer en entreprise</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="comp_row4_c1">Développer la présence en ligne (site, sécurité)</td>
+                        <td data-i18n="comp_row4_c2">Projet personnel — ce portfolio</td>
+                        <td data-i18n="comp_row4_c3">Acquise</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="comp_row5_c1">Travailler en mode projet</td>
+                        <td data-i18n="comp_row5_c2">Projets académiques (honeypot, cryptographie)</td>
+                        <td data-i18n="comp_row5_c3">En cours d'acquisition</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="table-note" data-i18n="comp_table_note">⚠️ Tableau à mettre à jour avec le tableau de synthèse officiel exigé pour l'épreuve E5.</p>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications" id="certifications">
+        <h2 class="heading"><span data-i18n="certs_heading">Mes</span> <span data-i18n="certs_heading_span">Certifications</span></h2>
+        <div class="cert-graphics-container">
+
+            <div class="cert-graphic">
+                <div class="cert-img-wrap">
+                    <img src="assets/logo_efset.jpg" alt="EF SET English Certificate">
+                </div>
+                <h3 data-i18n="cert1_title">Certificat EF SET Anglais</h3>
+                <p data-i18n="cert1_desc">Niveau B2 – Compétence en anglais</p>
+                <a href="https://cert.efset.org/pBESVD" target="_blank" class="btn"><span data-i18n="cert_view">Voir le certificat</span> <i class='bx bx-link-external'></i></a>
+            </div>
+
+            <div class="cert-graphic">
+                <div class="cert-img-wrap">
+                    <img src="assets/logo-cisco.png" alt="Cisco Intro Cybersecurity">
+                </div>
+                <h3 data-i18n="cert2_title">Cisco Introduction à la Cybersécurité</h3>
+                <p data-i18n="cert2_desc">Cisco Networking Academy</p>
+                <a href="https://www.credly.com/badges/d2ddfeff-7844-4ba6-8eb5-30457096af8a" target="_blank" class="btn"><span data-i18n="cert_view">Voir le certificat</span> <i class='bx bx-link-external'></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Entreprise -->
+    <section class="entreprise" id="entreprise">
+        <h2 class="heading"><span data-i18n="entreprise_heading">Entreprise</span> <span data-i18n="entreprise_heading_span">d'Accueil</span></h2>
+        <p class="notice-banner" data-i18n="entreprise_notice">⚠️ Section à compléter dès la signature de la convention de stage/alternance.</p>
+
+        <div class="entreprise-grid">
+            <div class="entreprise-card">
+                <h3 data-i18n="entreprise_id_title">Identification</h3>
+                <ul class="entreprise-id-list">
+                    <li><strong data-i18n="entreprise_id_denomination">Dénomination : </strong><span data-i18n="entreprise_id_placeholder">À compléter</span></li>
+                    <li><strong data-i18n="entreprise_id_adresse">Adresse : </strong><span data-i18n="entreprise_id_placeholder">À compléter</span></li>
+                    <li><strong data-i18n="entreprise_id_forme">Forme juridique : </strong><span data-i18n="entreprise_id_placeholder">À compléter</span></li>
+                    <li><strong data-i18n="entreprise_id_taille">Taille : </strong><span data-i18n="entreprise_id_placeholder">À compléter</span></li>
+                    <li><strong data-i18n="entreprise_id_effectif">Effectif : </strong><span data-i18n="entreprise_id_placeholder">À compléter</span></li>
+                    <li><strong data-i18n="entreprise_id_secteur">Secteur d'activité : </strong><span data-i18n="entreprise_id_placeholder">À compléter</span></li>
+                </ul>
+            </div>
+
+            <div class="entreprise-card">
+                <h3 data-i18n="entreprise_hist_title">Historique</h3>
+                <p data-i18n="entreprise_hist_p">À compléter : date de création, évolution de l'entreprise, faits marquants.</p>
+            </div>
+
+            <div class="entreprise-card">
+                <h3 data-i18n="entreprise_rgpd_title">RGPD</h3>
+                <p data-i18n="entreprise_rgpd_p">À compléter : politique de protection des données personnelles.</p>
+            </div>
+
+            <div class="entreprise-card">
+                <h3 data-i18n="entreprise_strategie_title">Orientations stratégiques</h3>
+                <p data-i18n="entreprise_strategie_p">À compléter : axes de développement, positionnement marché.</p>
+            </div>
+
+            <div class="entreprise-card">
+                <h3 data-i18n="entreprise_rse_title">RSE</h3>
+                <p data-i18n="entreprise_rse_p">À compléter : démarche de responsabilité sociétale.</p>
+            </div>
+        </div>
+
+        <h3 class="subheading" data-i18n="swot_title">Analyse SWOT</h3>
+        <div class="swot-grid">
+            <div class="swot-card swot-forces">
+                <h4 data-i18n="swot_forces">Forces</h4>
+                <p data-i18n="swot_forces_p">À compléter</p>
+            </div>
+            <div class="swot-card swot-faiblesses">
+                <h4 data-i18n="swot_faiblesses">Faiblesses</h4>
+                <p data-i18n="swot_faiblesses_p">À compléter</p>
+            </div>
+            <div class="swot-card swot-opportunites">
+                <h4 data-i18n="swot_opportunites">Opportunités</h4>
+                <p data-i18n="swot_opportunites_p">À compléter</p>
+            </div>
+            <div class="swot-card swot-menaces">
+                <h4 data-i18n="swot_menaces">Menaces</h4>
+                <p data-i18n="swot_menaces_p">À compléter</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missions -->
+    <section class="missions" id="missions">
+        <h2 class="heading"><span data-i18n="missions_heading">Mes</span> <span data-i18n="missions_heading_span">Missions</span></h2>
+        <h3 class="subheading" data-i18n="missions_entreprise_title">Missions réalisées en entreprise</h3>
+        <p class="notice-banner" data-i18n="missions_entreprise_notice">⚠️ À compléter après le début du stage/alternance.</p>
+
+        <div class="mission-card">
+            <div class="mission-field">
+                <strong data-i18n="mission_field_objectifs">Objectifs</strong>
+                <p data-i18n="mission_placeholder">À compléter</p>
+            </div>
+            <div class="mission-field">
+                <strong data-i18n="mission_field_moyens">Moyens utilisés</strong>
+                <p data-i18n="mission_placeholder">À compléter</p>
+            </div>
+            <div class="mission-field">
+                <strong data-i18n="mission_field_resultats">Résultats obtenus</strong>
+                <p data-i18n="mission_placeholder">À compléter</p>
+            </div>
+            <div class="mission-field">
+                <strong data-i18n="mission_field_difficultes">Difficultés rencontrées</strong>
+                <p data-i18n="mission_placeholder">À compléter</p>
+            </div>
+            <div class="mission-field">
+                <strong data-i18n="mission_field_competences">Compétences acquises</strong>
+                <p data-i18n="mission_placeholder">À compléter</p>
+            </div>
+        </div>
+
+        <h3 class="subheading" data-i18n="missions_conclusion_title">Conclusion sur les missions</h3>
+        <p data-i18n="missions_conclusion_p">À compléter : bilan global des missions en entreprise.</p>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2 class="heading"><span data-i18n="projects_heading">Mes</span> <span data-i18n="projects_heading_span">Projets Techniques</span></h2>
+        <p class="section-intro" data-i18n="projects_intro">Projets académiques et personnels réalisés dans le cadre de ma formation.</p>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bx-terminal'></i></div>
+                <h3 data-i18n="proj1_title">Honeypot Cowrie</h3>
+                <span class="project-tag" data-i18n="proj1_tag">Ubuntu Server / Kali Linux</span>
+                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj1_contexte">Déployer un honeypot en environnement virtualisé.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj1_moyens">VM Ubuntu Server + Kali Linux, Cowrie.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj1_resultats">Captures de tentatives de connexion.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj1_autocritique">Pourrait être enrichi avec un dashboard ELK.</p></div>
+                <a href="assets/honeypot_bts_sisr.pdf" class="btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="view_pdf">Voir le PDF</span></a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bx-lock'></i></div>
+                <h3 data-i18n="proj2_title">Chiffre de César – Encrypt Info</h3>
+                <span class="project-tag" data-i18n="proj2_tag">Langage C</span>
+                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj2_contexte">Implémenter un chiffrement de César en C.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj2_moyens">Langage C, GCC.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj2_resultats">Programme fonctionnel de chiffrement/déchiffrement.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj2_autocritique">Chiffrement pédagogique, non sécurisé pour un usage réel.</p></div>
+                <a href="assets/encrypt_info.c" class="btn" download><i class='bx bx-download'></i> <span>Voir le code source</span></a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bxl-linux'></i></div>
+                <h3 data-i18n="proj3_title">Cryptographie sur Linux</h3>
+                <span class="project-tag" data-i18n="proj3_tag">Linux / OpenSSL</span>
+                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj3_contexte">Explorer le chiffrement de fichiers sous Linux.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj3_moyens">OpenSSL, GPG.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj3_resultats">Fichiers chiffrés/déchiffrés avec succès.</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj3_autocritique">À approfondir avec une PKI complète.</p></div>
+                <a href="assets/TP_Cryptographie.pdf" class="btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="view_pdf">Voir le PDF</span></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Veille Technologique -->
+    <section class="tech-watch" id="veille">
+        <h2 class="heading"><span data-i18n="veille_heading">Veille</span> <span data-i18n="veille_heading_span">Technologique</span></h2>
+        <p class="section-intro" data-i18n="veille_intro">Annuaire de flux RSS suivis dans le cadre de ma veille technologique.</p>
+
+        <div class="rss-directory">
+            <div class="rss-card">
+                <h3 data-i18n="veille_cat1_title"><i class='bx bx-shield-quarter'></i> Cybersécurité & Alertes</h3>
+                <ul>
+                    <li><a href="https://www.cert.ssi.gouv.fr/feed/" target="_blank">ANSSI – CERT-FR (flux RSS)</a></li>
+                    <li><a href="https://www.zataz.com/feed/" target="_blank">ZATAZ (flux RSS)</a></li>
+                    <li><a href="https://www.bleepingcomputer.com/feed/" target="_blank">BleepingComputer (flux RSS)</a></li>
+                </ul>
+            </div>
+            <div class="rss-card">
+                <h3 data-i18n="veille_cat2_title"><i class='bx bx-bug'></i> Piratage & Threat Intelligence</h3>
+                <ul>
+                    <li><a href="https://krebsonsecurity.com/feed/" target="_blank">Krebs on Security (flux RSS)</a></li>
+                    <li><a href="https://www.zataz.com/feed/" target="_blank">ZATAZ – Piratage (flux RSS)</a></li>
+                </ul>
+            </div>
+            <div class="rss-card">
+                <h3 data-i18n="veille_cat3_title"><i class='bx bx-lock-alt'></i> Cryptographie</h3>
+                <ul>
+                    <li><a href="https://www.schneier.com/feed/atom/" target="_blank">Schneier on Security (flux Atom)</a></li>
+                </ul>
+            </div>
+            <div class="rss-card">
+                <h3 data-i18n="veille_cat4_title"><i class='bx bx-network-chart'></i> VPN & Réseaux</h3>
+                <ul>
+                    <li><a href="https://www.bleepingcomputer.com/feed/" target="_blank">BleepingComputer – Réseaux (flux RSS)</a></li>
+                </ul>
+            </div>
+            <div class="rss-card">
+                <h3 data-i18n="veille_cat5_title"><i class='bx bx-user-check'></i> RGPD & Vie Privée</h3>
+                <ul>
+                    <li><a href="https://www.cnil.fr/fr/rss.xml" target="_blank">CNIL – Actualités (flux RSS)</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="table-note" data-i18n="veille_feedly_note">Agrégation quotidienne via Feedly (Threat Intelligence board).</p>
+    </section>
+
+    <!-- Documents -->
+    <section class="documents" id="docs">
+        <h2 class="heading"><span data-i18n="docs_heading">Documents &</span> <span data-i18n="docs_heading_span">Synthèse</span></h2>
+        <p class="section-intro" data-i18n="docs_intro">Documents obligatoires pour l'épreuve E5.</p>
+
+        <div class="docs-grid">
+            <div class="doc-card">
+                <i class='bx bx-spreadsheet'></i>
+                <h3 data-i18n="doc1_title">Tableau de synthèse</h3>
+                <p data-i18n="doc1_desc">Synthèse des compétences et missions (format XLSX/PDF).</p>
+                <a href="assets/BTS_SIO_Annexe_6_Epreuve E5 - Tableau de synthese_2026.xlsx" class="btn download-btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="doc_download">Télécharger</span></a>
+            </div>
+            <div class="doc-card">
+                <i class='bx bx-id-card'></i>
+                <h3 data-i18n="doc2_title">Curriculum Vitae</h3>
+                <p data-i18n="doc2_desc">CV à jour au format PDF.</p>
+                <a href="assets/CV_Sahed_ARSHED_ALI_KHAN.pdf" class="btn download-btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="doc_download">Télécharger</span></a>
+            </div>
+            <div class="doc-card">
+                <i class='bx bx-briefcase-alt'></i>
+                <h3 data-i18n="doc3_title">Attestations de stage</h3>
+                <p data-i18n="doc3_desc">À ajouter dès réception (signées par l'entreprise).</p>
+                <span class="btn download-btn disabled" data-i18n="doc_pending">À venir</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion" id="conclusion">
+        <h2 class="heading"><span data-i18n="conclusion_heading">Conclusion &</span> <span data-i18n="conclusion_heading_span">Projet Professionnel</span></h2>
+        <p data-i18n="conclusion_p1">Ce BTS SIO – SISR m'a permis de consolider des compétences techniques et transversales.</p>
+        <p data-i18n="conclusion_p2">Mon projet professionnel : intégrer une entreprise en tant qu'administrateur systèmes et réseaux.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading"><span data-i18n="contact_heading">Contact</span> <span data-i18n="contact_heading_span">Me</span></h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3 data-i18n="get_in_touch">Me Contacter</h3>
+                <div class="info-item">
+                    <i class='bx bx-envelope'></i>
+                    <div>
+                        <strong data-i18n="label_email">E-mail</strong>
+                        <p>sahed.arshadalikhan@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-map'></i>
+                    <div>
+                        <strong data-i18n="label_loc">Localisation</strong>
+                        <p>Paris, France</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bxl-linkedin'></i>
+                    <div>
+                        <strong data-i18n="label_linkedin">LinkedIn</strong>
+                        <p><a href="https://www.linkedin.com/in/sahed-arshed-ali-khan-6942103b6/" target="_blank">sahed-arshed-ali-khan</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bxl-github'></i>
+                    <div>
+                        <strong data-i18n="label_github">GitHub</strong>
+                        <p><a href="https://github.com/Sahed-Khan" target="_blank">Sahed-Khan</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" name="firstname" id="firstname" required placeholder=" ">
+                        <label for="firstname">Prénom</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="lastname" id="lastname" required placeholder=" ">
+                        <label for="lastname">Nom</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" id="email" required placeholder=" ">
+                    <label for="email">Adresse e-mail</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="subject" id="subject" required placeholder=" ">
+                    <label for="subject">Sujet</label>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+                    <label for="message">Votre message</label>
+                </div>
+
+                <button type="submit" class="btn" id="submitBtn">
+                    <span class="btn-text"><i class='bx bx-send'></i> Envoyer le message</span>
+                    <span class="btn-loading" style="display:none"><i class='bx bx-loader-alt bx-spin'></i> Envoi…</span>
+                </button>
+
+                <div class="form-success" id="formSuccess" style="display:none">
+                    <i class='bx bx-check-circle'></i>
+                    <p>Message envoyé avec succès ! Je vous répondrai bientôt.</p>
+                </div>
+                <div class="form-error" id="formError" style="display:none">
+                    <i class='bx bx-error-circle'></i>
+                    <p>Une erreur s'est produite. Réessayez ou contactez-moi directement par e-mail.</p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-i18n="footer_copy">© 2026 Sahed Arshed Ali Khan. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/sahed-arshed-ali-khan-6942103b6/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Sahed-Khan" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/sahed5000a" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
