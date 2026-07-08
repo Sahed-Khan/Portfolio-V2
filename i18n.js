@@ -20,6 +20,7 @@ const translations = {
         home_desc: "Étudiant en BTS SIO, spécialité SISR — passionné par les réseaux, l'administration système et la cybersécurité.",
         download_cv: 'Télécharger mon CV',
         typing_words: ['Étudiant BTS SIO – SISR', 'Futur Administrateur Systèmes & Réseaux', 'Passionné de Cybersécurité', 'À la recherche d\'une alternance'],
+        terminal_output: 'étudiant BTS SIO – SISR',
 
         // ── Parcours (À propos + Timeline) ──
         parcours_heading: 'Mon',
@@ -243,6 +244,7 @@ const translations = {
         home_desc: 'BTS SIO student, specializing in SISR — passionate about networking, system administration, and cybersecurity.',
         download_cv: 'Download my CV',
         typing_words: ['BTS SIO – SISR Student', 'Future Systems & Network Administrator', 'Cybersecurity Enthusiast', 'Looking for an apprenticeship'],
+        terminal_output: 'BTS SIO – SISR student',
 
         parcours_heading: 'My',
         parcours_heading_span: 'Journey',
@@ -472,6 +474,7 @@ function applyLang(lang) {
     setText('[data-i18n="greeting"]', 'greeting');
     setText('[data-i18n="home_desc"]', 'home_desc');
     setText('[data-i18n="download_cv"]', 'download_cv');
+    setText('[data-i18n="terminal_output"]', 'terminal_output');
 
     // Parcours
     setText('[data-i18n="parcours_heading"]', 'parcours_heading');
