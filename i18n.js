@@ -111,6 +111,7 @@ const translations = {
         entreprise_heading: 'Entreprise',
         entreprise_heading_span: "d'Accueil",
         entreprise_notice: "⚠️ Fiche établie à partir d'informations publiques — forme juridique et effectif exact à confirmer.",
+        entreprise_tab1_name: 'Caplogy & Novatiel',
         entreprise_id_title: 'Identification',
         entreprise_id_denomination: 'Dénomination : ',
         entreprise_id_denomination_val: 'Caplogy & Novatiel',
@@ -356,6 +357,7 @@ const translations = {
         entreprise_heading: 'Host',
         entreprise_heading_span: 'Company',
         entreprise_notice: "⚠️ Profile built from public information — exact legal form and headcount to be confirmed.",
+        entreprise_tab1_name: 'Caplogy & Novatiel',
         entreprise_id_title: 'Identification',
         entreprise_id_denomination: 'Company name: ',
         entreprise_id_denomination_val: 'Caplogy & Novatiel',
@@ -593,6 +595,7 @@ function applyLang(lang) {
     setText('[data-i18n="entreprise_heading"]', 'entreprise_heading');
     setText('[data-i18n="entreprise_heading_span"]', 'entreprise_heading_span');
     setText('[data-i18n="entreprise_notice"]', 'entreprise_notice');
+    setText('[data-i18n="entreprise_tab1_name"]', 'entreprise_tab1_name');
     setText('[data-i18n="entreprise_id_title"]', 'entreprise_id_title');
     ['denomination','adresse','forme','taille','effectif','secteur'].forEach(k => {
         setText(`[data-i18n="entreprise_id_${k}"]`, `entreprise_id_${k}`);

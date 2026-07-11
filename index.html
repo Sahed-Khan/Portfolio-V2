@@ -308,57 +308,66 @@
         <h2 class="heading"><span data-i18n="entreprise_heading">Entreprise</span> <span data-i18n="entreprise_heading_span">d'Accueil</span></h2>
         <p class="notice-banner" data-i18n="entreprise_notice">⚠️ Fiche établie à partir d'informations publiques — forme juridique et effectif exact à confirmer.</p>
 
-        <div class="entreprise-grid">
-            <div class="entreprise-card">
-                <h3 data-i18n="entreprise_id_title">Identification</h3>
-                <ul class="entreprise-id-list">
-                    <li><strong data-i18n="entreprise_id_denomination">Dénomination : </strong><span data-i18n="entreprise_id_denomination_val">Caplogy &amp; Novatiel</span></li>
-                    <li><strong data-i18n="entreprise_id_adresse">Adresse : </strong><span data-i18n="entreprise_id_adresse_val">Vélizy-Villacoublay (78)</span></li>
-                    <li><strong data-i18n="entreprise_id_forme">Forme juridique : </strong><span data-i18n="entreprise_id_forme_val">Non communiquée publiquement — à confirmer</span></li>
-                    <li><strong data-i18n="entreprise_id_taille">Taille : </strong><span data-i18n="entreprise_id_taille_val">Groupe multi-entités (formation + services numériques)</span></li>
-                    <li><strong data-i18n="entreprise_id_effectif">Effectif : </strong><span data-i18n="entreprise_id_effectif_val">Non communiqué publiquement</span></li>
-                    <li><strong data-i18n="entreprise_id_secteur">Secteur d'activité : </strong><span data-i18n="entreprise_id_secteur_val">Formation professionnelle certifiante dans le numérique (cloud, cybersécurité, réseaux), R&amp;D/innovation, et prestations de développement via Novatiel</span></li>
-                </ul>
-            </div>
-
-            <div class="entreprise-card">
-                <h3 data-i18n="entreprise_hist_title">Historique</h3>
-                <p data-i18n="entreprise_hist_p">À compléter : date de création, évolution de l'entreprise, faits marquants.</p>
-            </div>
-
-            <div class="entreprise-card">
-                <h3 data-i18n="entreprise_rgpd_title">RGPD</h3>
-                <p data-i18n="entreprise_rgpd_p">À compléter : politique de protection des données personnelles.</p>
-            </div>
-
-            <div class="entreprise-card">
-                <h3 data-i18n="entreprise_strategie_title">Orientations stratégiques</h3>
-                <p data-i18n="entreprise_strategie_p">À compléter : axes de développement, positionnement marché.</p>
-            </div>
-
-            <div class="entreprise-card">
-                <h3 data-i18n="entreprise_rse_title">RSE</h3>
-                <p data-i18n="entreprise_rse_p">À compléter : démarche de responsabilité sociétale.</p>
-            </div>
+        <div class="entreprise-tabs" role="tablist">
+            <button type="button" class="entreprise-tab active" role="tab" id="entreprise-tab-1" aria-selected="true" aria-controls="entreprise-panel-1" data-panel="entreprise-panel-1">
+                <span class="tab-name" data-i18n="entreprise_tab1_name">Caplogy &amp; Novatiel</span><span class="tab-year">2026</span>
+            </button>
+            <!-- Pour ajouter une entreprise : dupliquer ce bouton (id/aria-controls/data-panel en "-2") et le .entreprise-panel juste en dessous -->
         </div>
 
-        <h3 class="subheading" data-i18n="swot_title">Analyse SWOT</h3>
-        <div class="swot-grid">
-            <div class="swot-card swot-forces">
-                <h4 data-i18n="swot_forces">Forces</h4>
-                <p data-i18n="swot_forces_p">À compléter</p>
+        <div class="entreprise-panel active" id="entreprise-panel-1" role="tabpanel" aria-labelledby="entreprise-tab-1">
+            <div class="entreprise-grid">
+                <div class="entreprise-card">
+                    <h3 data-i18n="entreprise_id_title">Identification</h3>
+                    <ul class="entreprise-id-list">
+                        <li><strong data-i18n="entreprise_id_denomination">Dénomination : </strong><span data-i18n="entreprise_id_denomination_val">Caplogy &amp; Novatiel</span></li>
+                        <li><strong data-i18n="entreprise_id_adresse">Adresse : </strong><span data-i18n="entreprise_id_adresse_val">Vélizy-Villacoublay (78)</span></li>
+                        <li><strong data-i18n="entreprise_id_forme">Forme juridique : </strong><span data-i18n="entreprise_id_forme_val">Non communiquée publiquement — à confirmer</span></li>
+                        <li><strong data-i18n="entreprise_id_taille">Taille : </strong><span data-i18n="entreprise_id_taille_val">Groupe multi-entités (formation + services numériques)</span></li>
+                        <li><strong data-i18n="entreprise_id_effectif">Effectif : </strong><span data-i18n="entreprise_id_effectif_val">Non communiqué publiquement</span></li>
+                        <li><strong data-i18n="entreprise_id_secteur">Secteur d'activité : </strong><span data-i18n="entreprise_id_secteur_val">Formation professionnelle certifiante dans le numérique (cloud, cybersécurité, réseaux), R&amp;D/innovation, et prestations de développement via Novatiel</span></li>
+                    </ul>
+                </div>
+
+                <div class="entreprise-card">
+                    <h3 data-i18n="entreprise_hist_title">Historique</h3>
+                    <p data-i18n="entreprise_hist_p">À compléter : date de création, évolution de l'entreprise, faits marquants.</p>
+                </div>
+
+                <div class="entreprise-card">
+                    <h3 data-i18n="entreprise_rgpd_title">RGPD</h3>
+                    <p data-i18n="entreprise_rgpd_p">À compléter : politique de protection des données personnelles.</p>
+                </div>
+
+                <div class="entreprise-card">
+                    <h3 data-i18n="entreprise_strategie_title">Orientations stratégiques</h3>
+                    <p data-i18n="entreprise_strategie_p">À compléter : axes de développement, positionnement marché.</p>
+                </div>
+
+                <div class="entreprise-card">
+                    <h3 data-i18n="entreprise_rse_title">RSE</h3>
+                    <p data-i18n="entreprise_rse_p">À compléter : démarche de responsabilité sociétale.</p>
+                </div>
             </div>
-            <div class="swot-card swot-faiblesses">
-                <h4 data-i18n="swot_faiblesses">Faiblesses</h4>
-                <p data-i18n="swot_faiblesses_p">À compléter</p>
-            </div>
-            <div class="swot-card swot-opportunites">
-                <h4 data-i18n="swot_opportunites">Opportunités</h4>
-                <p data-i18n="swot_opportunites_p">À compléter</p>
-            </div>
-            <div class="swot-card swot-menaces">
-                <h4 data-i18n="swot_menaces">Menaces</h4>
-                <p data-i18n="swot_menaces_p">À compléter</p>
+
+            <h3 class="subheading" data-i18n="swot_title">Analyse SWOT</h3>
+            <div class="swot-grid">
+                <div class="swot-card swot-forces">
+                    <h4 data-i18n="swot_forces">Forces</h4>
+                    <p data-i18n="swot_forces_p">À compléter</p>
+                </div>
+                <div class="swot-card swot-faiblesses">
+                    <h4 data-i18n="swot_faiblesses">Faiblesses</h4>
+                    <p data-i18n="swot_faiblesses_p">À compléter</p>
+                </div>
+                <div class="swot-card swot-opportunites">
+                    <h4 data-i18n="swot_opportunites">Opportunités</h4>
+                    <p data-i18n="swot_opportunites_p">À compléter</p>
+                </div>
+                <div class="swot-card swot-menaces">
+                    <h4 data-i18n="swot_menaces">Menaces</h4>
+                    <p data-i18n="swot_menaces_p">À compléter</p>
+                </div>
             </div>
         </div>
     </section>

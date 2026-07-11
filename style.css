@@ -829,6 +829,60 @@ span { color: var(--accent); }
 /* ==========================================
    ENTREPRISE / STAGE
    ========================================== */
+.entreprise-tabs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 3.5rem;
+    max-width: 900px;
+}
+
+.entreprise-tab {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--txt-muted);
+    background: var(--bg-card);
+    border: 1.5px solid var(--line);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.entreprise-tab .tab-name { color: inherit; }
+
+.entreprise-tab .tab-year {
+    font-size: 1.15rem;
+    color: var(--accent-cyan);
+    background: var(--accent-light);
+    padding: .2rem .7rem;
+    border-radius: .5rem;
+}
+
+.entreprise-tab:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.entreprise-tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.entreprise-tab.active .tab-year {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+}
+
+.entreprise-panel { display: none; }
+.entreprise-panel.active { display: block; }
+
 .entreprise-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));

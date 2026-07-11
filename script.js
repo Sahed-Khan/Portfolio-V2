@@ -139,6 +139,25 @@ revealElements.forEach(el => {
 });
 
 // ==========================================
+// ENTREPRISE TABS
+// ==========================================
+document.querySelectorAll('.entreprise-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-panel');
+
+        document.querySelectorAll('.entreprise-tab').forEach(t => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.entreprise-panel').forEach(p => p.classList.remove('active'));
+
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        document.getElementById(targetId)?.classList.add('active');
+    });
+});
+
+// ==========================================
 // CONTACT FORM
 // ==========================================
 const contactForm = document.getElementById('contactForm');
