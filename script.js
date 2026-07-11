@@ -1,24 +1,4 @@
 // ==========================================
-// EMAILJS CONFIGURATION
-// ==========================================
-// To make the contact form actually send emails:
-// 1. Go to https://www.emailjs.com and create a free account
-// 2. Add an Email Service (Gmail, Outlook, etc.)
-// 3. Create an Email Template with these variables:
-//    {{firstname}}, {{lastname}}, {{email}}, {{subject}}, {{message}}
-// 4. Replace the three values below with your own IDs
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz789'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'AbCdEfGhIjKlMnOp'
-
-// Init EmailJS
-(function () {
-    if (typeof emailjs !== 'undefined') {
-        emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-    }
-})();
-
-// ==========================================
 // HAMBURGER MENU
 // ==========================================
 const menuIcon = document.querySelector('#menu-icon');
@@ -197,36 +177,26 @@ if (contactForm) {
 
         setLoading(true);
 
-        // Check if EmailJS is configured
-        const isConfigured = EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' &&
-                             EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID' &&
-                             EMAILJS_PUBLIC_KEY  !== 'YOUR_PUBLIC_KEY';
-
-        if (!isConfigured || typeof emailjs === 'undefined') {
-            // Fallback: open default mail client
-            setTimeout(() => {
-                const mailtoBody = `Name: ${firstname} ${lastname}\nEmail: ${email}\n\n${message}`;
-                window.location.href = `mailto:sahed.arshadalikhan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
-                setLoading(false);
-                formSuccess.style.display = 'flex';
-                formSuccess.querySelector('p').textContent = (window.getTranslation && window.getTranslation('form_mailto_success')) || 'Opening your mail client… Your email is pre-filled and ready to send!';
-                contactForm.reset();
-            }, 600);
-            return;
-        }
-
-        // Send via EmailJS
+        // Send via the Cloudflare Pages Function (/api/contact), backed by Resend
         try {
-            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-                firstname, lastname, email, subject, message
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ firstname, lastname, email, subject, message })
             });
+
+            if (!res.ok) throw new Error('request_failed');
+
             formSuccess.style.display = 'flex';
-            formSuccess.querySelector('p').textContent = (window.getTranslation && window.getTranslation('form_success')) || "Message sent successfully!";
+            formSuccess.querySelector('p').textContent = (window.getTranslation && window.getTranslation('form_success')) || 'Message sent successfully!';
             contactForm.reset();
         } catch (err) {
-            console.error('EmailJS error:', err);
+            console.error('Contact form error:', err);
+            // Fallback: open default mail client
+            const mailtoBody = `Name: ${firstname} ${lastname}\nEmail: ${email}\n\n${message}`;
+            window.location.href = `mailto:contact.sahedarshedalikhan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
             formError.style.display = 'flex';
-            formError.querySelector('p').textContent = (window.getTranslation && window.getTranslation('form_error')) || 'Something went wrong.';
+            formError.querySelector('p').textContent = (window.getTranslation && window.getTranslation('form_error')) || "Une erreur s'est produite. Votre client mail par défaut a été ouvert en secours.";
         } finally {
             setLoading(false);
         }
