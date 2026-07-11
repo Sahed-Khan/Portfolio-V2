@@ -1,28 +1,37 @@
 // ==========================================
 // HAMBURGER MENU
 // ==========================================
-const menuIcon = document.querySelector('#menu-icon');
-const navbar   = document.querySelector('.navbar');
+const menuIcon      = document.querySelector('#menu-icon');
+const menuIconGlyph = menuIcon.querySelector('i');
+const navbar        = document.querySelector('.navbar');
+
+function setMenuOpen(isOpen) {
+    menuIconGlyph.classList.toggle('bx-x', isOpen);
+    menuIconGlyph.classList.toggle('bx-menu', !isOpen);
+    navbar.classList.toggle('active', isOpen);
+    menuIcon.setAttribute('aria-expanded', String(isOpen));
+    menuIcon.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+}
 
 menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    setMenuOpen(!navbar.classList.contains('active'));
 });
 
 // Close menu when a link is clicked (mobile UX)
 document.querySelectorAll('.navbar a').forEach(link => {
-    link.addEventListener('click', () => {
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
-    });
+    link.addEventListener('click', () => setMenuOpen(false));
 });
 
 // Close menu when clicking outside (mobile UX)
 document.addEventListener('click', (e) => {
     if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
+        setMenuOpen(false);
     }
+});
+
+// Close menu with Escape (keyboard UX)
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenuOpen(false);
 });
 
 // ==========================================
