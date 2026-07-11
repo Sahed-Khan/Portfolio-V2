@@ -58,16 +58,18 @@ const translations = {
         competences_heading: 'Mes',
         competences_heading_span: 'Compétences',
         competences_intro: "Compétences rattachées au bloc <strong>« Support et mise à disposition de services informatiques »</strong> (Épreuve E5), acquises en formation et en stage.",
-        skill_prog_title: 'Programmation',
-        skill_prog_p: 'Maîtrise de <strong>JavaScript, C et Python</strong>. Expérience pratique en scripting et résolution de problèmes.',
-        skill_web_title: 'Développement Web',
-        skill_web_p: "Développement d'applications web avec <strong>HTML, CSS et JavaScript</strong>. Création de sites responsives.",
-        skill_db_title: 'Base de données',
-        skill_db_p: 'Connaissance des bases relationnelles et <strong>MySQL</strong> pour stocker, gérer et interroger des données.',
-        skill_design_title: 'Logiciels & Modélisation',
-        skill_design_p: 'Modélisation 3D avec <strong>SolidWorks</strong>. Développement de jeux 2D avec <strong>Godot Engine</strong>.',
-        skill_net_title: 'Réseau & Virtualisation',
-        skill_net_p: 'Environnements virtuels avec <strong>VMware</strong>. Configuration de <strong>pfSense, Kali Linux, Debian</strong>. Analyse réseau avec <strong>Wireshark & Nmap</strong>. Gestion des incidents avec <strong>GLPI</strong>.',
+        skill_net_title: 'Réseaux',
+        skill_net_p: '<strong>TCP/IP, VLAN, routage inter-VLAN</strong>, commutation, DNS, DHCP, VPN, ACL. <strong>Cisco, pfSense</strong>, Wireshark, Nmap.',
+        skill_sys_title: 'Systèmes',
+        skill_sys_p: '<strong>Windows Server</strong> (AD DS, DNS, DHCP, GPO), <strong>Active Directory</strong>, Linux (Debian, Ubuntu, Kali), Bash, PowerShell.',
+        skill_virt_title: 'Virtualisation & conteneurs',
+        skill_virt_p: '<strong>VMware Workstation</strong>, KVM, <strong>Docker, Kubernetes</strong>.',
+        skill_secu_title: 'Supervision & sécurité',
+        skill_secu_p: '<strong>Zabbix</strong>, pare-feu, reverse proxy Nginx, SSL/TLS, OpenSSL, Fail2ban, <strong>MFA/TOTP</strong>, RGPD, RBAC.',
+        skill_support_title: 'Support & outils',
+        skill_support_p: '<strong>GLPI</strong> (ticketing / gestion de parc), Microsoft 365, Git, GitHub Actions, VS Code.',
+        skill_dev_title: 'Développement',
+        skill_dev_p: '<strong>TypeScript, JavaScript, Python</strong>, SQL (MySQL, SQLite) — dont architecture serverless (API REST, authentification par token) en stage.',
         skill_lang_title: 'Langues',
         skill_lang_p: 'Bengali / Bangla – Langue maternelle<br>Français – Langue maternelle<br>Anglais – Niveau B2 (certifié EF SET)',
 
@@ -88,7 +90,7 @@ const translations = {
         comp_row4_c2: 'Projet personnel — ce portfolio',
         comp_row4_c3: 'Acquise',
         comp_row5_c1: 'Travailler en mode projet',
-        comp_row5_c2: 'Projets académiques (honeypot, cryptographie)',
+        comp_row5_c2: 'Projets académiques (infra réseau, cloud privé, environnement sécurisé)',
         comp_row5_c3: 'En cours d\'acquisition',
         comp_table_note: '⚠️ Tableau à mettre à jour avec le tableau de synthèse officiel (format PDF/XLSX) exigé pour l\'épreuve E5.',
 
@@ -288,16 +290,18 @@ const translations = {
         competences_heading: 'My',
         competences_heading_span: 'Skills',
         competences_intro: 'Skills mapped to the <strong>"IT Support and Service Delivery"</strong> competency block (E5 exam), acquired through coursework and internship.',
-        skill_prog_title: 'Programming',
-        skill_prog_p: 'Proficiency in <strong>JavaScript, C, and Python</strong>. Hands-on experience in scripting and problem-solving.',
-        skill_web_title: 'Web Development',
-        skill_web_p: 'Web application development with <strong>HTML, CSS, and JavaScript</strong>. Responsive site creation.',
-        skill_db_title: 'Databases',
-        skill_db_p: 'Knowledge of relational databases and <strong>MySQL</strong> for storing, managing, and querying data.',
-        skill_design_title: 'Software & Modeling',
-        skill_design_p: '3D modeling with <strong>SolidWorks</strong>. 2D game development with <strong>Godot Engine</strong>.',
-        skill_net_title: 'Network & Virtualization',
-        skill_net_p: 'Virtual environments with <strong>VMware</strong>. Configuration of <strong>pfSense, Kali Linux, Debian</strong>. Network analysis with <strong>Wireshark & Nmap</strong>. Incident management with <strong>GLPI</strong>.',
+        skill_net_title: 'Networking',
+        skill_net_p: '<strong>TCP/IP, VLANs, inter-VLAN routing</strong>, switching, DNS, DHCP, VPN, ACLs. <strong>Cisco, pfSense</strong>, Wireshark, Nmap.',
+        skill_sys_title: 'Systems',
+        skill_sys_p: '<strong>Windows Server</strong> (AD DS, DNS, DHCP, GPO), <strong>Active Directory</strong>, Linux (Debian, Ubuntu, Kali), Bash, PowerShell.',
+        skill_virt_title: 'Virtualization & containers',
+        skill_virt_p: '<strong>VMware Workstation</strong>, KVM, <strong>Docker, Kubernetes</strong>.',
+        skill_secu_title: 'Monitoring & security',
+        skill_secu_p: '<strong>Zabbix</strong>, firewalling, Nginx reverse proxy, SSL/TLS, OpenSSL, Fail2ban, <strong>MFA/TOTP</strong>, GDPR, RBAC.',
+        skill_support_title: 'Support & tools',
+        skill_support_p: '<strong>GLPI</strong> (ticketing / asset management), Microsoft 365, Git, GitHub Actions, VS Code.',
+        skill_dev_title: 'Development',
+        skill_dev_p: '<strong>TypeScript, JavaScript, Python</strong>, SQL (MySQL, SQLite) — including serverless architecture (REST APIs, token-based authentication) during my internship.',
         skill_lang_title: 'Languages',
         skill_lang_p: 'Bengali / Bangla – Native<br>French – Native<br>English – B2 Level (EF SET Certified)',
 
@@ -318,7 +322,7 @@ const translations = {
         comp_row4_c2: 'Personal project — this portfolio',
         comp_row4_c3: 'Acquired',
         comp_row5_c1: 'Work in project mode',
-        comp_row5_c2: 'Academic projects (honeypot, cryptography)',
+        comp_row5_c2: 'Academic projects (network infra, private cloud, secured environment)',
         comp_row5_c3: 'In progress',
         comp_table_note: '⚠️ Table to be updated with the official summary table (PDF/XLSX) required for the E5 exam.',
 
@@ -526,7 +530,7 @@ function applyLang(lang) {
     setText('[data-i18n="competences_heading"]', 'competences_heading');
     setText('[data-i18n="competences_heading_span"]', 'competences_heading_span');
     setHTML('[data-i18n="competences_intro"]', 'competences_intro');
-    ['prog','web','db','design','net','lang'].forEach(k => {
+    ['net','sys','virt','secu','support','dev','lang'].forEach(k => {
         setText(`[data-i18n="skill_${k}_title"]`, `skill_${k}_title`);
         const el = document.querySelector(`[data-i18n="skill_${k}_p"]`);
         if (el) el.innerHTML = t[`skill_${k}_p`] ?? el.innerHTML;
