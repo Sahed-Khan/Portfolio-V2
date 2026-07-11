@@ -21,6 +21,12 @@ export async function onRequestPost({ request, env }) {
     const email     = (body.email || '').trim();
     const subject   = (body.subject || '').trim();
     const message   = (body.message || '').trim();
+    const website   = (body.website || '').trim(); // honeypot
+
+    // Silently pretend success for bots (they filled the hidden field)
+    if (website) {
+        return json({ ok: true });
+    }
 
     if (!firstname || !lastname || !email || !subject || !message) {
         return json({ error: 'missing_fields' }, 400);

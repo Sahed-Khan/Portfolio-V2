@@ -1193,6 +1193,14 @@ span { color: var(--accent); }
 
 .info-item a:hover { color: var(--accent-dark); }
 
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* Contact Form */
 .contact-form {
     display: flex;

@@ -160,6 +160,7 @@ if (contactForm) {
         const email     = contactForm.email.value.trim();
         const subject   = contactForm.subject.value.trim();
         const message   = contactForm.message.value.trim();
+        const website   = contactForm.website.value.trim(); // honeypot — must stay empty
 
         // Basic validation
         if (!firstname || !lastname || !email || !subject || !message) {
@@ -182,7 +183,7 @@ if (contactForm) {
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ firstname, lastname, email, subject, message })
+                body: JSON.stringify({ firstname, lastname, email, subject, message, website })
             });
 
             if (!res.ok) throw new Error('request_failed');
