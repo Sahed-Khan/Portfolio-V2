@@ -101,6 +101,11 @@ const translations = {
         cert_view: 'Voir le certificat',
         cert2_title: 'Cisco Introduction à la Cybersécurité',
         cert2_desc: 'Cisco Networking Academy',
+        cert3_title: 'Cisco CCNA',
+        cert3_desc: 'Cisco Networking Academy',
+        cert4_title: 'Cisco CyberOps Associate',
+        cert4_desc: 'Cisco Networking Academy',
+        cert_pending: 'En cours de préparation',
 
         // ── Entreprise / Stage ──
         entreprise_heading: 'Entreprise',
@@ -184,7 +189,16 @@ const translations = {
         proj3_moyens: "Active Directory (utilisateurs, GPO), pfSense (filtrage, NAT, VPN), tests d'intrusion Kali Linux.",
         proj3_resultats: 'Domaine fonctionnel avec GPO appliquées et périmètre réseau filtré et audité.',
         proj3_autocritique: "À approfondir avec un IDS/IPS en complément du pare-feu.",
+
+        proj4_title: 'Alternance Radar',
+        proj4_tag: 'Cloudflare Workers / IA',
+        proj4_contexte: "Automatiser la recherche d'alternance BTS SIO SISR : scraper, filtrer et scorer les offres pertinentes.",
+        proj4_moyens: 'Cloudflare Workers (Hono, TypeScript), D1, KV, IA Llama 3.3 70B pour le scoring, scraping API France Travail, cron automatique.',
+        proj4_resultats: "Offres scrapées et filtrées automatiquement toutes les 4h, écoles/CFA écartés par l'IA, génération de CV et lettres de motivation optimisés ATS.",
+        proj4_autocritique: "Une source d'offres encore instable à stabiliser ; interface d'administration à compléter.",
+
         view_pdf: 'Voir le PDF',
+        view_repo: 'Voir sur GitHub',
 
         // ── Veille technologique ──
         veille_heading: 'Veille',
@@ -333,6 +347,11 @@ const translations = {
         cert_view: 'View Certificate',
         cert2_title: 'Cisco Introduction to Cybersecurity',
         cert2_desc: 'Cisco Networking Academy',
+        cert3_title: 'Cisco CCNA',
+        cert3_desc: 'Cisco Networking Academy',
+        cert4_title: 'Cisco CyberOps Associate',
+        cert4_desc: 'Cisco Networking Academy',
+        cert_pending: 'In progress',
 
         entreprise_heading: 'Host',
         entreprise_heading_span: 'Company',
@@ -413,7 +432,16 @@ const translations = {
         proj3_moyens: 'Active Directory (users, GPOs), pfSense (filtering, NAT, VPN), Kali Linux penetration testing.',
         proj3_resultats: 'Functional domain with applied GPOs, and a filtered, audited network perimeter.',
         proj3_autocritique: 'Could be deepened with an IDS/IPS alongside the firewall.',
+
+        proj4_title: 'Alternance Radar',
+        proj4_tag: 'Cloudflare Workers / AI',
+        proj4_contexte: 'Automate the search for a SISR work-study placement: scrape, filter, and score relevant job postings.',
+        proj4_moyens: 'Cloudflare Workers (Hono, TypeScript), D1, KV, Llama 3.3 70B AI for scoring, France Travail API scraping, automated cron.',
+        proj4_resultats: 'Job postings scraped and filtered automatically every 4 hours, training schools/CFAs screened out by AI, ATS-optimized resume and cover letter generation.',
+        proj4_autocritique: 'One data source is still unstable and needs stabilizing; admin interface still to be completed.',
+
         view_pdf: 'View PDF',
+        view_repo: 'View on GitHub',
 
         veille_heading: 'Technology',
         veille_heading_span: 'Watch',
@@ -554,7 +582,12 @@ function applyLang(lang) {
     setText('[data-i18n="cert1_desc"]', 'cert1_desc');
     setText('[data-i18n="cert2_title"]', 'cert2_title');
     setText('[data-i18n="cert2_desc"]', 'cert2_desc');
+    setText('[data-i18n="cert3_title"]', 'cert3_title');
+    setText('[data-i18n="cert3_desc"]', 'cert3_desc');
+    setText('[data-i18n="cert4_title"]', 'cert4_title');
+    setText('[data-i18n="cert4_desc"]', 'cert4_desc');
     document.querySelectorAll('[data-i18n="cert_view"]').forEach(el => el.textContent = t['cert_view'] ?? el.textContent);
+    document.querySelectorAll('[data-i18n="cert_pending"]').forEach(el => el.textContent = t['cert_pending'] ?? el.textContent);
 
     // Entreprise
     setText('[data-i18n="entreprise_heading"]', 'entreprise_heading');
@@ -594,7 +627,7 @@ function applyLang(lang) {
     ['contexte','moyens','resultats','autocritique'].forEach(k => {
         document.querySelectorAll(`[data-i18n="proj_field_${k}"]`).forEach(el => el.textContent = t[`proj_field_${k}`] ?? el.textContent);
     });
-    [1,2,3].forEach(n => {
+    [1,2,3,4].forEach(n => {
         setText(`[data-i18n="proj${n}_title"]`, `proj${n}_title`);
         setText(`[data-i18n="proj${n}_tag"]`, `proj${n}_tag`);
         setText(`[data-i18n="proj${n}_contexte"]`, `proj${n}_contexte`);
@@ -603,6 +636,7 @@ function applyLang(lang) {
         setText(`[data-i18n="proj${n}_autocritique"]`, `proj${n}_autocritique`);
     });
     document.querySelectorAll('[data-i18n="view_pdf"]').forEach(el => el.textContent = t['view_pdf'] ?? el.textContent);
+    document.querySelectorAll('[data-i18n="view_repo"]').forEach(el => el.textContent = t['view_repo'] ?? el.textContent);
 
     // Veille technologique
     setText('[data-i18n="veille_heading"]', 'veille_heading');
