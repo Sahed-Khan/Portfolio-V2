@@ -461,7 +461,65 @@
     <!-- Veille Technologique -->
     <section class="tech-watch" id="veille">
         <h2 class="heading"><span data-i18n="veille_heading">Veille</span> <span data-i18n="veille_heading_span">Technologique</span></h2>
-        <p class="section-intro" data-i18n="veille_intro">Annuaire de flux RSS suivis dans le cadre de ma veille technologique.</p>
+        <p class="section-intro" data-i18n="veille_intro">Suivi continu de l'actualité cybersécurité, réseaux et RGPD — sélection d'analyses ci-dessous, et annuaire des flux RSS suivis au quotidien.</p>
+
+        <h3 class="subheading" data-i18n="veille_fiches_title">Fiches de veille</h3>
+        <p class="notice-banner" data-i18n="veille_fiches_notice">⚠️ Sélection d'actualités suivies via les flux ci-dessous — à enrichir au fil de la veille.</p>
+
+        <div class="veille-fiches">
+            <article class="veille-fiche">
+                <div class="veille-fiche-head">
+                    <span class="veille-tag" data-i18n="veille_cat1_title">Cybersécurité & Alertes</span>
+                    <span class="veille-date" data-i18n="veille_f1_date">10/07/2026</span>
+                </div>
+                <h4 data-i18n="veille_f1_title">Multiples vulnérabilités dans le noyau Linux de Red Hat</h4>
+                <p class="veille-source"><span data-i18n="veille_field_source">Source</span> : <a href="https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0863/" target="_blank">CERT-FR — CERTFR-2026-AVI-0863</a></p>
+                <div class="veille-field">
+                    <strong data-i18n="veille_field_resume">Résumé</strong>
+                    <p data-i18n="veille_f1_resume">Le CERT-FR recense de multiples vulnérabilités dans le noyau Linux de Red Hat (RHEL 7 à 10, OpenShift 4.15/4.17) : risques d'exécution de code à distance, d'élévation de privilèges et de déni de service. Plus de 60 CVE sont couvertes par les correctifs à appliquer.</p>
+                </div>
+                <div class="veille-field">
+                    <strong data-i18n="veille_field_analyse">Pourquoi c'est pertinent pour moi</strong>
+                    <p data-i18n="veille_f1_analyse">En écho direct avec l'administration des VM de test (Docker/Kubernetes) en stage : ça confirme l'importance d'un patch management régulier et de tester les mises à jour noyau avant tout déploiement en production, plutôt que d'attendre un incident.</p>
+                </div>
+            </article>
+
+            <article class="veille-fiche">
+                <div class="veille-fiche-head">
+                    <span class="veille-tag" data-i18n="veille_cat2_title">Piratage & Threat Intelligence</span>
+                    <span class="veille-date" data-i18n="veille_f2_date">11/07/2026</span>
+                </div>
+                <h4 data-i18n="veille_f2_title">Campagne mondiale ciblant les CMS vulnérables (WordPress, Joomla, Craft CMS)</h4>
+                <p class="veille-source"><span data-i18n="veille_field_source">Source</span> : <a href="https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/" target="_blank">BleepingComputer — alerte ACSC (Australie)</a></p>
+                <div class="veille-field">
+                    <strong data-i18n="veille_field_resume">Résumé</strong>
+                    <p data-i18n="veille_f2_resume">L'agence australienne de cybersécurité alerte sur une campagne mondiale, potentiellement assistée par l'IA, exploitant des failles de CMS (WordPress, Joomla, Craft CMS) pour déployer des webshells et obtenir un accès persistant, en ciblant surtout les PME.</p>
+                </div>
+                <div class="veille-field">
+                    <strong data-i18n="veille_field_analyse">Pourquoi c'est pertinent pour moi</strong>
+                    <p data-i18n="veille_f2_analyse">Illustre concrètement la compétence « Développer la présence en ligne de l'organisation » : maintenir les CMS à jour, supprimer les plugins/thèmes inutilisés, et surveiller les répertoires web pour repérer un webshell avant qu'il ne soit exploité.</p>
+                </div>
+            </article>
+
+            <article class="veille-fiche">
+                <div class="veille-fiche-head">
+                    <span class="veille-tag" data-i18n="veille_cat5_title">RGPD & Vie Privée</span>
+                    <span class="veille-date" data-i18n="veille_f3_date">09/07/2026</span>
+                </div>
+                <h4 data-i18n="veille_f3_title">Contrôle de l'activité des personnes employées</h4>
+                <p class="veille-source"><span data-i18n="veille_field_source">Source</span> : <a href="https://www.cnil.fr/fr/controle-de-lactivite-des-personnes-employees" target="_blank">CNIL</a></p>
+                <div class="veille-field">
+                    <strong data-i18n="veille_field_resume">Résumé</strong>
+                    <p data-i18n="veille_f3_resume">La CNIL rappelle que tout dispositif de contrôle de l'activité des salariés doit être justifié et proportionné, ne pas placer sous surveillance constante, faire l'objet d'une consultation du CSE et d'une information préalable — les outils trop intrusifs (keyloggers) sont à proscrire.</p>
+                </div>
+                <div class="veille-field">
+                    <strong data-i18n="veille_field_analyse">Pourquoi c'est pertinent pour moi</strong>
+                    <p data-i18n="veille_f3_analyse">Directement lié à la gestion des habilitations RBAC et à la mise en conformité RGPD des accès réalisée en stage : ça pose un cadre clair sur ce qui est proportionné à tracer (accès, journaux) par rapport à ce qui serait excessif.</p>
+                </div>
+            </article>
+        </div>
+
+        <h3 class="subheading" data-i18n="veille_sources_title">Sources suivies</h3>
 
         <div class="rss-directory">
             <div class="rss-card">
