@@ -215,24 +215,18 @@ const translations = {
         veille_fiches_title: 'Fiches de veille',
         veille_fiches_notice: "⚠️ Sélection d'actualités suivies via les flux ci-dessous — à enrichir au fil de la veille.",
         veille_sources_title: 'Sources suivies',
-        veille_field_source: 'Source',
-        veille_field_resume: 'Résumé',
-        veille_field_analyse: 'Pourquoi c\'est pertinent pour moi',
 
         veille_f1_date: '10/07/2026',
         veille_f1_title: 'Multiples vulnérabilités dans le noyau Linux de Red Hat',
-        veille_f1_resume: "Le CERT-FR recense de multiples vulnérabilités dans le noyau Linux de Red Hat (RHEL 7 à 10, OpenShift 4.15/4.17) : risques d'exécution de code à distance, d'élévation de privilèges et de déni de service. Plus de 60 CVE sont couvertes par les correctifs à appliquer.",
-        veille_f1_analyse: "En écho direct avec l'administration des VM de test (Docker/Kubernetes) en stage : ça confirme l'importance d'un patch management régulier et de tester les mises à jour noyau avant tout déploiement en production, plutôt que d'attendre un incident.",
+        veille_f1_desc: "Le CERT-FR recense de multiples vulnérabilités dans le noyau Linux de Red Hat (RHEL 7 à 10, OpenShift 4.15/4.17) : exécution de code à distance, élévation de privilèges, déni de service, sur plus de 60 CVE. En écho direct avec l'administration des VM de test (Docker/Kubernetes) en stage — ça confirme l'importance d'un patch management régulier plutôt que d'attendre un incident.",
 
         veille_f2_date: '11/07/2026',
         veille_f2_title: 'Campagne mondiale ciblant les CMS vulnérables (WordPress, Joomla, Craft CMS)',
-        veille_f2_resume: "L'agence australienne de cybersécurité alerte sur une campagne mondiale, potentiellement assistée par l'IA, exploitant des failles de CMS (WordPress, Joomla, Craft CMS) pour déployer des webshells et obtenir un accès persistant, en ciblant surtout les PME.",
-        veille_f2_analyse: "Illustre concrètement la compétence « Développer la présence en ligne de l'organisation » : maintenir les CMS à jour, supprimer les plugins/thèmes inutilisés, et surveiller les répertoires web pour repérer un webshell avant qu'il ne soit exploité.",
+        veille_f2_desc: "L'agence australienne de cybersécurité alerte sur une campagne mondiale, potentiellement assistée par l'IA, exploitant des failles de CMS pour déployer des webshells et obtenir un accès persistant, en ciblant surtout les PME. Illustre concrètement la compétence « Développer la présence en ligne de l'organisation » : CMS à jour, plugins inutiles supprimés, répertoires web surveillés.",
 
         veille_f3_date: '09/07/2026',
         veille_f3_title: 'Contrôle de l\'activité des personnes employées',
-        veille_f3_resume: "La CNIL rappelle que tout dispositif de contrôle de l'activité des salariés doit être justifié et proportionné, ne pas placer sous surveillance constante, faire l'objet d'une consultation du CSE et d'une information préalable — les outils trop intrusifs (keyloggers) sont à proscrire.",
-        veille_f3_analyse: "Directement lié à la gestion des habilitations RBAC et à la mise en conformité RGPD des accès réalisée en stage : ça pose un cadre clair sur ce qui est proportionné à tracer (accès, journaux) par rapport à ce qui serait excessif.",
+        veille_f3_desc: "La CNIL rappelle que tout dispositif de contrôle de l'activité des salariés doit être justifié et proportionné, ne pas placer sous surveillance constante, et faire l'objet d'une consultation du CSE et d'une information préalable. Directement lié à la gestion des habilitations RBAC et à la mise en conformité RGPD des accès réalisée en stage.",
 
         // ── Documents ──
         docs_heading: 'Documents &',
@@ -480,24 +474,18 @@ const translations = {
         veille_fiches_title: 'Watch entries',
         veille_fiches_notice: '⚠️ A selection of news followed via the feeds below — to be expanded as the watch continues.',
         veille_sources_title: 'Sources followed',
-        veille_field_source: 'Source',
-        veille_field_resume: 'Summary',
-        veille_field_analyse: 'Why it matters to me',
 
         veille_f1_date: '07/10/2026',
         veille_f1_title: "Multiple vulnerabilities in Red Hat's Linux kernel",
-        veille_f1_resume: 'CERT-FR reports multiple vulnerabilities in the Red Hat Linux kernel (RHEL 7 to 10, OpenShift 4.15/4.17): risks of remote code execution, privilege escalation and denial of service. Over 60 CVEs are covered by the patches to apply.',
-        veille_f1_analyse: "Directly relevant to the test VM administration (Docker/Kubernetes) I do during my internship: a reminder of the importance of regular patch management and testing kernel updates before any production deployment, rather than waiting for an incident.",
+        veille_f1_desc: 'CERT-FR reports multiple vulnerabilities in the Red Hat Linux kernel (RHEL 7 to 10, OpenShift 4.15/4.17): remote code execution, privilege escalation, denial of service, across 60+ CVEs. Directly relevant to the test VM administration (Docker/Kubernetes) I do during my internship — a reminder of the importance of regular patch management rather than waiting for an incident.',
 
         veille_f2_date: '07/11/2026',
         veille_f2_title: 'Global campaign targeting vulnerable CMS platforms (WordPress, Joomla, Craft CMS)',
-        veille_f2_resume: "Australia's cybersecurity agency warns of a global, possibly AI-assisted campaign exploiting CMS flaws (WordPress, Joomla, Craft CMS) to deploy webshells and gain persistent access, mainly targeting SMBs.",
-        veille_f2_analyse: "A concrete illustration of the \"Develop the organization's online presence\" skill: keeping CMS platforms patched, removing unused plugins/themes, and monitoring web directories to catch a webshell before it's exploited.",
+        veille_f2_desc: "Australia's cybersecurity agency warns of a global, possibly AI-assisted campaign exploiting CMS flaws to deploy webshells and gain persistent access, mainly targeting SMBs. A concrete illustration of the \"Develop the organization's online presence\" skill: keeping CMS platforms patched, removing unused plugins, monitoring web directories.",
 
         veille_f3_date: '07/09/2026',
         veille_f3_title: 'Monitoring employee activity — CNIL guidance',
-        veille_f3_resume: "The CNIL reminds that any employee monitoring system must be justified and proportionate, avoid constant surveillance, go through employee representative consultation and prior notice — overly intrusive tools like keyloggers are prohibited.",
-        veille_f3_analyse: "Directly tied to the RBAC access management and GDPR compliance work I did during my internship: it sets a clear boundary between what's proportionate to log (access, activity) versus what would be excessive.",
+        veille_f3_desc: "The CNIL reminds that any employee monitoring system must be justified and proportionate, avoid constant surveillance, and go through employee representative consultation and prior notice. Directly tied to the RBAC access management and GDPR compliance work I did during my internship.",
 
         docs_heading: 'Documents &',
         docs_heading_span: 'Summary',
@@ -695,11 +683,8 @@ function applyLang(lang) {
     setText('[data-i18n="veille_fiches_title"]', 'veille_fiches_title');
     setText('[data-i18n="veille_fiches_notice"]', 'veille_fiches_notice');
     setText('[data-i18n="veille_sources_title"]', 'veille_sources_title');
-    setText('[data-i18n="veille_field_source"]', 'veille_field_source');
-    setText('[data-i18n="veille_field_resume"]', 'veille_field_resume');
-    setText('[data-i18n="veille_field_analyse"]', 'veille_field_analyse');
     [1, 2, 3].forEach(n => {
-        ['date', 'title', 'resume', 'analyse'].forEach(k => {
+        ['date', 'title', 'desc'].forEach(k => {
             setText(`[data-i18n="veille_f${n}_${k}"]`, `veille_f${n}_${k}`);
         });
     });
