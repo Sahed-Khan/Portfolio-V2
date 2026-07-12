@@ -687,8 +687,9 @@ function applyLang(lang) {
 
     // Typing animation words
     if (t.typing_words && typeof words !== 'undefined') {
+        const newTypingWords = t.typing_words.slice();
         words.length = 0;
-        t.typing_words.forEach(w => words.push(w));
+        newTypingWords.forEach(w => words.push(w));
     }
 
     localStorage.setItem('portfolio_lang', lang);
