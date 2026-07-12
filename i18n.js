@@ -204,17 +204,13 @@ const translations = {
         // ── Veille technologique ──
         veille_heading: 'Veille',
         veille_heading_span: 'Technologique',
-        veille_intro: "Suivi continu de l'actualité cybersécurité, réseaux et RGPD — sélection d'analyses ci-dessous, et annuaire des flux RSS suivis au quotidien.",
+        veille_intro: "Suivi continu de l'actualité cybersécurité, réseaux et RGPD — sélection d'analyses ci-dessous.",
         veille_cat1_title: 'Cybersécurité & Alertes',
         veille_cat2_title: 'Piratage & Threat Intelligence',
-        veille_cat3_title: 'Cryptographie',
-        veille_cat4_title: 'VPN & Réseaux',
         veille_cat5_title: 'RGPD & Vie Privée',
-        veille_feedly_note: "Agrégation quotidienne via <strong>Feedly</strong> (Threat Intelligence board), classée par catégorie ci-dessus.",
 
         veille_fiches_title: 'Fiches de veille',
-        veille_fiches_notice: "⚠️ Sélection d'actualités suivies via les flux ci-dessous — à enrichir au fil de la veille.",
-        veille_sources_title: 'Sources suivies',
+        veille_fiches_notice: "⚠️ Sélection d'actualités suivies — à enrichir au fil de la veille.",
 
         veille_f1_date: '10/07/2026',
         veille_f1_title: 'Multiples vulnérabilités dans le noyau Linux de Red Hat',
@@ -463,17 +459,13 @@ const translations = {
 
         veille_heading: 'Technology',
         veille_heading_span: 'Watch',
-        veille_intro: 'Ongoing watch on cybersecurity, networking and GDPR news — a selection of analyses below, plus the RSS feed directory followed daily.',
+        veille_intro: 'Ongoing watch on cybersecurity, networking and GDPR news — a selection of analyses below.',
         veille_cat1_title: 'Cybersecurity & Alerts',
         veille_cat2_title: 'Hacking & Threat Intelligence',
-        veille_cat3_title: 'Cryptography',
-        veille_cat4_title: 'VPN & Networks',
         veille_cat5_title: 'GDPR & Privacy',
-        veille_feedly_note: 'Daily aggregation via <strong>Feedly</strong> (Threat Intelligence board), sorted by category above.',
 
         veille_fiches_title: 'Watch entries',
-        veille_fiches_notice: '⚠️ A selection of news followed via the feeds below — to be expanded as the watch continues.',
-        veille_sources_title: 'Sources followed',
+        veille_fiches_notice: '⚠️ A selection of news followed — to be expanded as the watch continues.',
 
         veille_f1_date: '07/10/2026',
         veille_f1_title: "Multiple vulnerabilities in Red Hat's Linux kernel",
@@ -677,12 +669,10 @@ function applyLang(lang) {
     setText('[data-i18n="veille_heading"]', 'veille_heading');
     setText('[data-i18n="veille_heading_span"]', 'veille_heading_span');
     setText('[data-i18n="veille_intro"]', 'veille_intro');
-    for (let i = 1; i <= 5; i++) setText(`[data-i18n="veille_cat${i}_title"]`, `veille_cat${i}_title`);
-    setHTML('[data-i18n="veille_feedly_note"]', 'veille_feedly_note');
+    [1, 2, 5].forEach(i => setText(`[data-i18n="veille_cat${i}_title"]`, `veille_cat${i}_title`));
 
     setText('[data-i18n="veille_fiches_title"]', 'veille_fiches_title');
     setText('[data-i18n="veille_fiches_notice"]', 'veille_fiches_notice');
-    setText('[data-i18n="veille_sources_title"]', 'veille_sources_title');
     [1, 2, 3].forEach(n => {
         ['date', 'title', 'desc'].forEach(k => {
             setText(`[data-i18n="veille_f${n}_${k}"]`, `veille_f${n}_${k}`);

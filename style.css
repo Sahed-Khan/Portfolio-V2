@@ -1070,66 +1070,9 @@ span { color: var(--accent); }
 }
 
 /* ==========================================
-   VEILLE TECHNOLOGIQUE — RSS DIRECTORY
+   VEILLE TECHNOLOGIQUE
    ========================================== */
 .tech-watch { background: var(--bg-soft); }
-
-.rss-directory {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-    gap: 2.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.rss-card {
-    background: var(--bg-card);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: 2.5rem;
-    transition: var(--transition);
-}
-
-.rss-card:hover {
-    border-color: var(--accent);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
-}
-
-.rss-card h3 {
-    font-family: var(--font-display);
-    font-size: 1.7rem;
-    margin-bottom: 1.4rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.rss-card h3 i {
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--accent-light);
-    color: var(--accent);
-    border-radius: var(--radius-sm);
-    font-size: 1.9rem;
-    flex-shrink: 0;
-}
-
-.rss-card ul { list-style: none; }
-
-.rss-card li { margin-bottom: .9rem; }
-
-.rss-card li a {
-    color: var(--txt-muted);
-    font-size: 1.4rem;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.rss-card li a:hover { color: var(--accent); }
 
 .veille-fiches {
     display: grid;
@@ -1647,7 +1590,6 @@ span { color: var(--accent); }
     .skills-container,
     .entreprise-grid,
     .swot-grid,
-    .rss-directory,
     .veille-fiches,
     .docs-grid,
     .projects-container { grid-template-columns: 1fr; }
