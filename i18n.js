@@ -17,18 +17,18 @@ const translations = {
         nav_contact: 'Contact',
 
         greeting: 'Bonjour, je suis',
-        home_desc: "Étudiant en BTS SIO, spécialité SISR — passionné par les réseaux, l'administration système et la cybersécurité.",
+        home_desc: "Étudiant en BTS SIO SISR, je construis un profil DevSecOps : des infrastructures automatisées, conteneurisées et sécurisées dès la conception.",
         download_cv: 'Télécharger mon CV',
-        typing_words: ['Étudiant BTS SIO – SISR', 'Futur Administrateur Systèmes & Réseaux', 'Passionné de Cybersécurité', 'À la recherche d\'une alternance'],
-        terminal_output: 'étudiant BTS SIO – SISR',
+        typing_words: ['Étudiant BTS SIO – SISR', 'Futur Ingénieur DevSecOps', 'Docker · Kubernetes · CI/CD', 'Security by design'],
+        terminal_output: "BTS SIO SISR → ingénieur DevSecOps",
 
         // ── Parcours (À propos + Timeline) ──
         parcours_heading: 'Mon',
         parcours_heading_span: 'Parcours',
-        parcours_subtitle: 'Étudiant BTS SIO – SISR',
+        parcours_subtitle: "Étudiant BTS SIO – SISR · objectif DevSecOps",
         parcours_p1: "Je m'appelle Sahed Arshed Ali Khan. Je suis actuellement inscrit en BTS SIO (Services Informatiques aux Organisations), spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux) au CFA Aurlom à Paris.",
-        parcours_p2: "Je suis passionné par les réseaux, l'administration système et la cybersécurité. Après une réorientation depuis un parcours scientifique (BUT Mesures Physiques), j'ai choisi l'informatique pour allier rigueur analytique et goût du concret : configurer, dépanner, sécuriser.",
-        parcours_p3: "Mon objectif : devenir administrateur systèmes et réseaux, avec une spécialisation progressive vers la cybersécurité (détection d'intrusion, durcissement d'infrastructures).",
+        parcours_p2: "Après une réorientation depuis un parcours scientifique (BUT Mesures Physiques), j'ai choisi l'informatique pour allier rigueur analytique et goût du concret. Une première année en BTS CIEL (cybersécurité) puis le BTS SIO SISR m'ont donné un double socle : l'infrastructure et la sécurité.",
+        parcours_p3: "Mon objectif : devenir ingénieur DevSecOps — automatiser le déploiement des infrastructures et y intégrer la sécurité à chaque étape (build, tests, déploiement, exploitation) plutôt qu'en fin de chaîne. Mon stage, centré sur Docker, Kubernetes et la CI/CD, a confirmé cette orientation.",
         parcours_btn: 'Voir mon parcours académique',
 
         timeline_heading: 'Mon',
@@ -58,16 +58,18 @@ const translations = {
         competences_heading: 'Mes',
         competences_heading_span: 'Compétences',
         competences_intro: "Compétences rattachées au bloc <strong>« Support et mise à disposition de services informatiques »</strong> (Épreuve E5), acquises en formation et en stage.",
+        skill_devsecops_title: "DevSecOps & automatisation",
+        skill_devsecops_p: "<strong>CI/CD GitHub Actions</strong>, <strong>Docker, Kubernetes</strong>, gestion des secrets, moindre privilège (RBAC), sécurité applicative (<strong>OWASP</strong>), déploiement serverless Cloudflare (Workers, Pages).",
         skill_net_title: 'Réseaux',
         skill_net_p: '<strong>TCP/IP, VLAN, routage inter-VLAN</strong>, commutation, DNS, DHCP, VPN, ACL. <strong>Cisco, pfSense</strong>, Wireshark, Nmap.',
         skill_sys_title: 'Systèmes',
         skill_sys_p: '<strong>Windows Server</strong> (AD DS, DNS, DHCP, GPO), <strong>Active Directory</strong>, Linux (Debian, Ubuntu, Kali), Bash, PowerShell.',
         skill_virt_title: 'Virtualisation & conteneurs',
-        skill_virt_p: '<strong>VMware Workstation</strong>, KVM, <strong>Docker, Kubernetes</strong>.',
+        skill_virt_p: "<strong>VMware Workstation</strong>, KVM, <strong>Docker</strong> (Dockerfile, BuildKit, registre), <strong>Kubernetes</strong> (kubeadm, kubectl, déploiements).",
         skill_secu_title: 'Supervision & sécurité',
         skill_secu_p: '<strong>Zabbix</strong>, pare-feu, reverse proxy Nginx, SSL/TLS, OpenSSL, Fail2ban, <strong>MFA/TOTP</strong>, RGPD, RBAC.',
         skill_support_title: 'Support & outils',
-        skill_support_p: '<strong>GLPI</strong> (ticketing / gestion de parc), Microsoft 365, Git, GitHub Actions, VS Code.',
+        skill_support_p: "<strong>GLPI</strong> (ticketing / gestion de parc), Microsoft 365, <strong>Git</strong>, VS Code.",
         skill_dev_title: 'Développement',
         skill_dev_p: '<strong>TypeScript, JavaScript, Python</strong>, SQL (MySQL, SQLite) — dont architecture serverless (API REST, authentification par token) en stage.',
         skill_lang_title: 'Langues',
@@ -84,8 +86,8 @@ const translations = {
         comp_row2_c2: 'Formation, projets pratiques',
         comp_row2_c3: 'En cours d\'acquisition',
         comp_row3_c1: "Répondre aux incidents et demandes d'assistance",
-        comp_row3_c2: 'À compléter avec le stage',
-        comp_row3_c3: 'À évaluer en entreprise',
+        comp_row3_c2: "Stage : diagnostic et correction de 26 images Docker défaillantes",
+        comp_row3_c3: "Mise en œuvre en entreprise",
         comp_row4_c1: 'Développer la présence en ligne (site, sécurité)',
         comp_row4_c2: 'Projet personnel — ce portfolio',
         comp_row4_c3: 'Acquise',
@@ -147,7 +149,7 @@ const translations = {
         missions_heading: 'Mes',
         missions_heading_span: 'Missions',
         missions_entreprise_title: 'Missions réalisées en entreprise',
-        missions_entreprise_notice: '⚠️ Missions en cours — à affiner au fil du stage/alternance.',
+        missions_entreprise_notice: "Stage de 1re année réalisé en 2026 — missions orientées conteneurs, automatisation et sécurité.",
         mission_field_objectifs: 'Objectifs',
         mission_field_moyens: 'Moyens utilisés',
         mission_field_resultats: 'Résultats obtenus',
@@ -158,13 +160,26 @@ const translations = {
         mission1_resultats: "VM de test provisionnées en un clic (contre 3h auparavant), déploiement automatisé à chaque push, accès mis en conformité RGPD.",
         mission1_difficultes: "Prise en main d'un environnement Kubernetes en conditions réelles et arbitrage entre rapidité de déploiement et exigences de sécurité/RGPD.",
         mission1_competences: "Administration d'infrastructure conteneurisée, sécurisation des accès (RBAC, tokens), automatisation CI/CD, mise en conformité réglementaire.",
+        mission1_title: "Automatisation et sécurisation des environnements de test",
+        mission2_title: "Fiabilisation des images Docker d'une plateforme de labs cybersécurité",
+        mission2_objectifs: "Tester, diagnostiquer et réparer les 26 images Docker d'une plateforme de labs pédagogiques en cybersécurité (Splunk, Wazuh, pfSense, Kali, OSINT, cryptographie…) avant leur publication.",
+        mission2_moyens: "Docker / BuildKit, cluster Kubernetes de test, registre d'images local, kubectl port-forward, lecture des journaux de build et d'exécution, procédure de test identique pour chaque image.",
+        mission2_resultats: "26 images sur 26 reconstruites, testées de bout en bout (build, exécution, déploiement Kubernetes) et livrées à l'équipe pour publication.",
+        mission2_difficultes: "Des pannes systémiques communes à plusieurs images : clés GPG de dépôts expirées (signatures de paquets refusées), variable HOME incorrecte, module Python retiré en 3.13, trousseau gnome-keyring inutilisable sous Kubernetes.",
+        mission2_competences: "Sécurité de la chaîne d'approvisionnement logicielle (dépôts signés, images de base), méthode de test reproductible, débogage de conteneurs et de déploiements Kubernetes.",
+        mission3_title: "Audit de sécurité d'une application web interne",
+        mission3_objectifs: "Relire le code d'une application web serverless avant sa passation et identifier les risques de sécurité et d'exploitation.",
+        mission3_moyens: "Revue de code guidée par l'OWASP Top 10 (contrôle d'accès, authentification, gestion des secrets), analyse des scripts de déploiement, rédaction d'une documentation technique de passation.",
+        mission3_resultats: "Faille de contrôle d'accès (IDOR) corrigée ; points de durcissement remontés à l'équipe (gestion des secrets, limitation de débit sur l'authentification, séparation stricte des environnements de déploiement) ; documentation technique remise.",
+        mission3_difficultes: "Prioriser les correctifs sans bloquer les livraisons, et expliquer des risques techniques à des interlocuteurs non spécialistes.",
+        mission3_competences: "Sécurité applicative, contrôle d'accès, sécurisation d'une chaîne de déploiement, documentation et communication des risques.",
         missions_conclusion_title: 'Conclusion sur les missions',
-        missions_conclusion_p: "Ce début de stage m'a permis de passer d'environnements pédagogiques à une infrastructure de production réelle, avec des contraintes concrètes de sécurité, de conformité et de rapidité de déploiement. Bilan à enrichir au fil de l'alternance.",
+        missions_conclusion_p: "Ce stage m'a fait passer d'environnements pédagogiques à une infrastructure réelle, où rapidité de livraison et sécurité doivent coexister. Automatiser les déploiements, fiabiliser les images de conteneurs et auditer le code avant la mise en production : c'est exactement le quotidien d'un ingénieur DevSecOps, et ce qui a fixé mon projet professionnel.",
 
         // ── Projets techniques ──
         projects_heading: 'Mes',
         projects_heading_span: 'Projets Techniques',
-        projects_intro: 'Projets académiques et personnels réalisés dans le cadre de ma formation.',
+        projects_intro: "Projets académiques et personnels — de l'infrastructure réseau classique vers l'automatisation et la sécurité des déploiements.",
         proj_field_contexte: 'Contexte / Objectifs',
         proj_field_moyens: 'Moyens utilisés',
         proj_field_resultats: 'Résultats',
@@ -198,13 +213,25 @@ const translations = {
         proj4_resultats: "Offres scrapées et filtrées automatiquement toutes les 4h, écoles/CFA écartés par l'IA, génération de CV et lettres de motivation optimisés ATS.",
         proj4_autocritique: "Une source d'offres encore instable à stabiliser ; interface d'administration à compléter.",
 
+        proj5_title: "Cluster Kubernetes monté à la main",
+        proj5_tag: "Debian / kubeadm / Flannel",
+        proj5_contexte: "Comprendre Kubernetes en profondeur en installant un cluster sans solution clé en main, plutôt que de l'utiliser comme une boîte noire.",
+        proj5_moyens: "VM Debian, kubeadm, containerd, CNI Flannel, kubectl.",
+        proj5_resultats: "Cluster mono-nœud opérationnel : nœud Ready, réseau des pods fonctionnel.",
+        proj5_autocritique: "Un seul nœud, donc pas de haute disponibilité. Prochaine étape : y déployer une application Node.js + PostgreSQL avec Secrets, sondes de santé et NetworkPolicies (ce qui impose de passer à un CNI comme Calico, Flannel ne les appliquant pas).",
+        proj6_title: "Ce portfolio, déployé en « secure by design »",
+        proj6_tag: "Cloudflare Pages / Functions",
+        proj6_contexte: "Héberger ce portfolio et son formulaire de contact en appliquant les réflexes DevSecOps sur un vrai projet en ligne.",
+        proj6_moyens: "Cloudflare Pages + Pages Function (API de contact serverless), clé API stockée en secret chiffré côté plateforme, validation côté serveur, champ pot de miel anti-spam, en-têtes de sécurité HTTP (CSP, HSTS…), déploiements de preview par branche Git.",
+        proj6_resultats: "Aucune clé exposée côté client ni dans le dépôt, formulaire protégé contre le spam basique, chaque modification validée sur une URL de preview isolée avant la production.",
+        proj6_autocritique: "À compléter par une limitation de débit sur l'API de contact et un pipeline CI (lint, scan de dépendances et de secrets) avant chaque déploiement.",
         view_pdf: 'Voir le PDF',
         view_repo: 'Voir sur GitHub',
 
         // ── Veille technologique ──
         veille_heading: 'Veille',
         veille_heading_span: 'Technologique',
-        veille_intro: "Suivi continu de l'actualité cybersécurité, réseaux et RGPD — sélection d'analyses ci-dessous.",
+        veille_intro: "Suivi continu de l'actualité cybersécurité, infrastructure et RGPD, lue sous l'angle DevSecOps : vulnérabilités à patcher dans les images et les systèmes, surfaces d'attaque web, conformité des accès.",
         veille_cat1_title: 'Cybersécurité & Alertes',
         veille_cat2_title: 'Piratage & Threat Intelligence',
         veille_cat5_title: 'RGPD & Vie Privée',
@@ -240,9 +267,19 @@ const translations = {
         conclusion_heading: 'Conclusion &',
         conclusion_heading_span: 'Projet Professionnel',
         conclusion_p1: "Ce BTS SIO – SISR m'a permis de consolider des compétences techniques (administration système, réseaux, sécurité) et transversales (rigueur, autonomie, travail en mode projet).",
-        conclusion_p2: "Mon projet professionnel : intégrer une entreprise en tant qu'administrateur systèmes et réseaux, avec une spécialisation progressive vers la cybersécurité (SOC, détection d'intrusion, durcissement d'infrastructures).",
+        conclusion_p2: "Mon projet professionnel : devenir ingénieur DevSecOps. Le DevSecOps réunit ce qui m'attire depuis le début — l'infrastructure (SISR), la cybersécurité (BTS CIEL) et l'automatisation (stage) — pour livrer vite sans sacrifier la sécurité.",
 
         // ── Contact ──
+        conclusion_p3: "Prochaines briques techniques à acquérir : Infrastructure as Code (Terraform, Ansible), scan de vulnérabilités dans la CI (Trivy, analyse SAST), gestion centralisée des secrets et supervision des clusters Kubernetes.",
+        roadmap1_when: "2025 – 2027",
+        roadmap1_title: "Socle infra & sécurité",
+        roadmap1_p: "BTS CIEL puis BTS SIO SISR : réseaux, systèmes, cybersécurité, stage Docker/Kubernetes/CI-CD.",
+        roadmap2_when: "Après le BTS",
+        roadmap2_title: "Poursuite d'études en alternance",
+        roadmap2_p: "Bachelor puis cycle ingénieur ou mastère orienté cloud / DevSecOps, en alternance pour pratiquer en production.",
+        roadmap3_when: "Objectif",
+        roadmap3_title: "Ingénieur DevSecOps",
+        roadmap3_p: "Concevoir des pipelines CI/CD sécurisés, automatiser l'infrastructure et intégrer la sécurité à chaque étape du cycle de vie.",
         contact_heading: 'Contact',
         contact_heading_span: 'Me',
         get_in_touch: 'Me Contacter',
@@ -279,17 +316,17 @@ const translations = {
         nav_contact: 'Contact',
 
         greeting: "Hello, I'm",
-        home_desc: 'BTS SIO student, specializing in SISR — passionate about networking, system administration, and cybersecurity.',
+        home_desc: "BTS SIO SISR student building a DevSecOps profile: automated, containerized infrastructure that is secure by design.",
         download_cv: 'Download my CV',
-        typing_words: ['BTS SIO – SISR Student', 'Future Systems & Network Administrator', 'Cybersecurity Enthusiast', 'Looking for an apprenticeship'],
-        terminal_output: 'BTS SIO – SISR student',
+        typing_words: ['BTS SIO – SISR Student', 'Future DevSecOps Engineer', 'Docker · Kubernetes · CI/CD', 'Security by design'],
+        terminal_output: "BTS SIO SISR → DevSecOps engineer",
 
         parcours_heading: 'My',
         parcours_heading_span: 'Journey',
-        parcours_subtitle: 'BTS SIO – SISR Student',
+        parcours_subtitle: "BTS SIO – SISR Student · DevSecOps track",
         parcours_p1: 'My name is Sahed Arshed Ali Khan. I am currently enrolled in the BTS SIO program (IT Services for Organizations), specializing in SISR (Infrastructure, Systems and Networks Solutions) at CFA Aurlom, Paris.',
-        parcours_p2: 'I am passionate about networking, system administration, and cybersecurity. After reorienting from a scientific background (Physical Measurements degree), I chose IT to combine analytical rigor with hands-on problem solving.',
-        parcours_p3: 'My goal: become a systems and network administrator, with a progressive specialization toward cybersecurity (intrusion detection, infrastructure hardening).',
+        parcours_p2: "After reorienting from a scientific background (Physical Measurements degree), I chose IT to combine analytical rigor with hands-on problem solving. A first year in BTS CIEL (cybersecurity) followed by BTS SIO SISR gave me a dual foundation: infrastructure and security.",
+        parcours_p3: "My goal: become a DevSecOps engineer — automating infrastructure deployment and building security into every stage (build, test, deploy, run) rather than bolting it on at the end. My internship, focused on Docker, Kubernetes and CI/CD, confirmed this direction.",
         parcours_btn: 'View my academic journey',
 
         timeline_heading: 'My',
@@ -317,16 +354,18 @@ const translations = {
         competences_heading: 'My',
         competences_heading_span: 'Skills',
         competences_intro: 'Skills mapped to the <strong>"IT Support and Service Delivery"</strong> competency block (E5 exam), acquired through coursework and internship.',
+        skill_devsecops_title: "DevSecOps & automation",
+        skill_devsecops_p: "<strong>GitHub Actions CI/CD</strong>, <strong>Docker, Kubernetes</strong>, secrets management, least privilege (RBAC), application security (<strong>OWASP</strong>), Cloudflare serverless deployment (Workers, Pages).",
         skill_net_title: 'Networking',
         skill_net_p: '<strong>TCP/IP, VLANs, inter-VLAN routing</strong>, switching, DNS, DHCP, VPN, ACLs. <strong>Cisco, pfSense</strong>, Wireshark, Nmap.',
         skill_sys_title: 'Systems',
         skill_sys_p: '<strong>Windows Server</strong> (AD DS, DNS, DHCP, GPO), <strong>Active Directory</strong>, Linux (Debian, Ubuntu, Kali), Bash, PowerShell.',
         skill_virt_title: 'Virtualization & containers',
-        skill_virt_p: '<strong>VMware Workstation</strong>, KVM, <strong>Docker, Kubernetes</strong>.',
+        skill_virt_p: "<strong>VMware Workstation</strong>, KVM, <strong>Docker</strong> (Dockerfile, BuildKit, registry), <strong>Kubernetes</strong> (kubeadm, kubectl, deployments).",
         skill_secu_title: 'Monitoring & security',
         skill_secu_p: '<strong>Zabbix</strong>, firewalling, Nginx reverse proxy, SSL/TLS, OpenSSL, Fail2ban, <strong>MFA/TOTP</strong>, GDPR, RBAC.',
         skill_support_title: 'Support & tools',
-        skill_support_p: '<strong>GLPI</strong> (ticketing / asset management), Microsoft 365, Git, GitHub Actions, VS Code.',
+        skill_support_p: "<strong>GLPI</strong> (ticketing / asset management), Microsoft 365, <strong>Git</strong>, VS Code.",
         skill_dev_title: 'Development',
         skill_dev_p: '<strong>TypeScript, JavaScript, Python</strong>, SQL (MySQL, SQLite) — including serverless architecture (REST APIs, token-based authentication) during my internship.',
         skill_lang_title: 'Languages',
@@ -343,8 +382,8 @@ const translations = {
         comp_row2_c2: 'Coursework, practical projects',
         comp_row2_c3: 'In progress',
         comp_row3_c1: 'Handle incidents & support requests',
-        comp_row3_c2: 'To complete with internship',
-        comp_row3_c3: 'To be assessed on-site',
+        comp_row3_c2: "Internship: diagnosed and fixed 26 broken Docker images",
+        comp_row3_c3: "Applied on-site",
         comp_row4_c1: 'Build & maintain online presence (site, security)',
         comp_row4_c2: 'Personal project — this portfolio',
         comp_row4_c3: 'Acquired',
@@ -404,7 +443,7 @@ const translations = {
         missions_heading: 'My',
         missions_heading_span: 'Missions',
         missions_entreprise_title: 'Missions carried out on-site',
-        missions_entreprise_notice: '⚠️ Missions in progress — to be refined as the internship/apprenticeship continues.',
+        missions_entreprise_notice: "First-year internship completed in 2026 — missions focused on containers, automation and security.",
         mission_field_objectifs: 'Objectives',
         mission_field_moyens: 'Resources used',
         mission_field_resultats: 'Results achieved',
@@ -415,12 +454,25 @@ const translations = {
         mission1_resultats: 'Test VMs provisioned in one click (vs. 3 hours previously), automated deployment on every push, GDPR-compliant access.',
         mission1_difficultes: 'Getting up to speed with a real-world Kubernetes environment and balancing deployment speed against security/GDPR requirements.',
         mission1_competences: 'Containerized infrastructure administration, access security (RBAC, tokens), CI/CD automation, regulatory compliance.',
+        mission1_title: "Automating and securing test environments",
+        mission2_title: "Hardening the Docker images of a cybersecurity lab platform",
+        mission2_objectifs: "Test, diagnose and fix the 26 Docker images of a cybersecurity training lab platform (Splunk, Wazuh, pfSense, Kali, OSINT, cryptography…) before release.",
+        mission2_moyens: "Docker / BuildKit, test Kubernetes cluster, local image registry, kubectl port-forward, build and runtime log analysis, the same test procedure for every image.",
+        mission2_resultats: "26 out of 26 images rebuilt, tested end to end (build, run, Kubernetes deployment) and handed over to the team for release.",
+        mission2_difficultes: "Systemic failures shared across images: expired repository GPG keys (package signatures rejected), wrong HOME variable, a Python module removed in 3.13, gnome-keyring unusable under Kubernetes.",
+        mission2_competences: "Software supply chain security (signed repositories, base images), reproducible testing method, container and Kubernetes deployment debugging.",
+        mission3_title: "Security audit of an internal web application",
+        mission3_objectifs: "Review the code of a serverless web application before handover and identify security and operational risks.",
+        mission3_moyens: "Code review guided by the OWASP Top 10 (access control, authentication, secrets management), deployment script analysis, technical handover documentation.",
+        mission3_resultats: "Access control flaw (IDOR) fixed; hardening points reported to the team (secrets management, login rate limiting, strict separation of deployment environments); technical documentation delivered.",
+        mission3_difficultes: "Prioritizing fixes without blocking releases, and explaining technical risks to non-specialists.",
+        mission3_competences: "Application security, access control, deployment pipeline security, risk documentation and communication.",
         missions_conclusion_title: 'Conclusion on missions',
-        missions_conclusion_p: 'This early stage of the internship allowed me to move from academic environments to a real production infrastructure, with concrete constraints around security, compliance, and deployment speed. Assessment to be expanded as the apprenticeship continues.',
+        missions_conclusion_p: "This internship moved me from academic labs to real infrastructure, where delivery speed and security have to coexist. Automating deployments, hardening container images and auditing code before production: that is the daily work of a DevSecOps engineer, and what settled my career plan.",
 
         projects_heading: 'My',
         projects_heading_span: 'Technical Projects',
-        projects_intro: 'Academic and personal projects carried out during my training.',
+        projects_intro: "Academic and personal projects — from classic network infrastructure toward automated, secure deployments.",
         proj_field_contexte: 'Context / Objectives',
         proj_field_moyens: 'Resources used',
         proj_field_resultats: 'Results',
@@ -454,12 +506,24 @@ const translations = {
         proj4_resultats: 'Job postings scraped and filtered automatically every 4 hours, training schools/CFAs screened out by AI, ATS-optimized resume and cover letter generation.',
         proj4_autocritique: 'One data source is still unstable and needs stabilizing; admin interface still to be completed.',
 
+        proj5_title: "Kubernetes cluster built by hand",
+        proj5_tag: "Debian / kubeadm / Flannel",
+        proj5_contexte: "Understand Kubernetes in depth by installing a cluster without a turnkey solution, instead of using it as a black box.",
+        proj5_moyens: "Debian VM, kubeadm, containerd, Flannel CNI, kubectl.",
+        proj5_resultats: "Working single-node cluster: node Ready, pod networking functional.",
+        proj5_autocritique: "Single node, so no high availability. Next step: deploy a Node.js + PostgreSQL app with Secrets, health probes and NetworkPolicies (which requires moving to a CNI like Calico, since Flannel does not enforce them).",
+        proj6_title: "This portfolio, deployed secure by design",
+        proj6_tag: "Cloudflare Pages / Functions",
+        proj6_contexte: "Host this portfolio and its contact form while applying DevSecOps habits to a real, live project.",
+        proj6_moyens: "Cloudflare Pages + Pages Function (serverless contact API), API key stored as an encrypted platform secret, server-side validation, anti-spam honeypot field, HTTP security headers (CSP, HSTS…), per-branch Git preview deployments.",
+        proj6_resultats: "No key exposed client-side or in the repository, form protected against basic spam, every change validated on an isolated preview URL before production.",
+        proj6_autocritique: "Still to add: rate limiting on the contact API and a CI pipeline (lint, dependency and secret scanning) before each deployment.",
         view_pdf: 'View PDF',
         view_repo: 'View on GitHub',
 
         veille_heading: 'Technology',
         veille_heading_span: 'Watch',
-        veille_intro: 'Ongoing watch on cybersecurity, networking and GDPR news — a selection of analyses below.',
+        veille_intro: "Ongoing watch on cybersecurity, infrastructure and GDPR news, read through a DevSecOps lens: vulnerabilities to patch in images and systems, web attack surfaces, access compliance.",
         veille_cat1_title: 'Cybersecurity & Alerts',
         veille_cat2_title: 'Hacking & Threat Intelligence',
         veille_cat5_title: 'GDPR & Privacy',
@@ -494,8 +558,18 @@ const translations = {
         conclusion_heading: 'Conclusion &',
         conclusion_heading_span: 'Career Plan',
         conclusion_p1: 'This BTS SIO – SISR allowed me to build technical skills (system administration, networking, security) and transferable ones (rigor, autonomy, project work).',
-        conclusion_p2: 'My career plan: join a company as a systems and network administrator, with a progressive specialization toward cybersecurity (SOC, intrusion detection, infrastructure hardening).',
+        conclusion_p2: "My career plan: become a DevSecOps engineer. DevSecOps brings together what has drawn me from the start — infrastructure (SISR), cybersecurity (BTS CIEL) and automation (internship) — to ship fast without sacrificing security.",
 
+        conclusion_p3: "Next technical building blocks: Infrastructure as Code (Terraform, Ansible), vulnerability scanning in CI (Trivy, SAST), centralized secrets management and Kubernetes cluster monitoring.",
+        roadmap1_when: "2025 – 2027",
+        roadmap1_title: "Infra & security foundation",
+        roadmap1_p: "BTS CIEL then BTS SIO SISR: networking, systems, cybersecurity, Docker/Kubernetes/CI-CD internship.",
+        roadmap2_when: "After the BTS",
+        roadmap2_title: "Work-study higher education",
+        roadmap2_p: "Bachelor's then engineering or master's program in cloud / DevSecOps, as a work-study to practice in production.",
+        roadmap3_when: "Goal",
+        roadmap3_title: "DevSecOps Engineer",
+        roadmap3_p: "Design secure CI/CD pipelines, automate infrastructure and build security into every stage of the lifecycle.",
         contact_heading: 'Contact',
         contact_heading_span: 'Me',
         get_in_touch: 'Get in Touch',
@@ -584,7 +658,7 @@ function applyLang(lang) {
     setText('[data-i18n="competences_heading"]', 'competences_heading');
     setText('[data-i18n="competences_heading_span"]', 'competences_heading_span');
     setHTML('[data-i18n="competences_intro"]', 'competences_intro');
-    ['net','sys','virt','secu','support','dev','lang'].forEach(k => {
+    ['devsecops','net','sys','virt','secu','support','dev','lang'].forEach(k => {
         setText(`[data-i18n="skill_${k}_title"]`, `skill_${k}_title`);
         const el = document.querySelector(`[data-i18n="skill_${k}_p"]`);
         if (el) el.innerHTML = t[`skill_${k}_p`] ?? el.innerHTML;
@@ -642,7 +716,12 @@ function applyLang(lang) {
     setText('[data-i18n="missions_entreprise_notice"]', 'missions_entreprise_notice');
     ['objectifs','moyens','resultats','difficultes','competences'].forEach(k => {
         setText(`[data-i18n="mission_field_${k}"]`, `mission_field_${k}`);
-        setText(`[data-i18n="mission1_${k}"]`, `mission1_${k}`);
+    });
+    [1,2,3].forEach(n => {
+        setText(`[data-i18n="mission${n}_title"]`, `mission${n}_title`);
+        ['objectifs','moyens','resultats','difficultes','competences'].forEach(k => {
+            setText(`[data-i18n="mission${n}_${k}"]`, `mission${n}_${k}`);
+        });
     });
     setText('[data-i18n="missions_conclusion_title"]', 'missions_conclusion_title');
     setText('[data-i18n="missions_conclusion_p"]', 'missions_conclusion_p');
@@ -654,7 +733,7 @@ function applyLang(lang) {
     ['contexte','moyens','resultats','autocritique'].forEach(k => {
         document.querySelectorAll(`[data-i18n="proj_field_${k}"]`).forEach(el => el.textContent = t[`proj_field_${k}`] ?? el.textContent);
     });
-    [1,2,3,4].forEach(n => {
+    [1,2,3,4,5,6].forEach(n => {
         setText(`[data-i18n="proj${n}_title"]`, `proj${n}_title`);
         setText(`[data-i18n="proj${n}_tag"]`, `proj${n}_tag`);
         setText(`[data-i18n="proj${n}_contexte"]`, `proj${n}_contexte`);
@@ -694,6 +773,10 @@ function applyLang(lang) {
     setText('[data-i18n="conclusion_heading_span"]', 'conclusion_heading_span');
     setText('[data-i18n="conclusion_p1"]', 'conclusion_p1');
     setText('[data-i18n="conclusion_p2"]', 'conclusion_p2');
+    setText('[data-i18n="conclusion_p3"]', 'conclusion_p3');
+    [1,2,3].forEach(n => {
+        ['when','title','p'].forEach(k => setText(`[data-i18n="roadmap${n}_${k}"]`, `roadmap${n}_${k}`));
+    });
 
     // Contact
     setText('[data-i18n="contact_heading"]', 'contact_heading');
