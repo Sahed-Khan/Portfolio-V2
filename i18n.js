@@ -256,6 +256,10 @@ const translations = {
         veille_f3_title: 'Contrôle de l\'activité des personnes employées',
         veille_f3_desc: "La CNIL rappelle que tout dispositif de contrôle de l'activité des salariés doit être justifié et proportionné, ne pas placer sous surveillance constante, et faire l'objet d'une consultation du CSE et d'une information préalable. Directement lié à la gestion des habilitations RBAC et à la mise en conformité RGPD des accès réalisée en stage.",
 
+        veille_f4_date: '22/07/2026',
+        veille_f4_title: 'Multiples vulnérabilités dans GLPI (CERT-FR AVI-0909)',
+        veille_f4_desc: "Le CERT-FR signale 4 vulnérabilités dans GLPI (versions 11.0.x < 11.0.8 et < 10.0.26 ; CVE-2026-45801, -53627, -53628, -55217) : atteinte à la confidentialité et à l'intégrité des données, contournement de la politique de sécurité. Le point marquant : GLPI est justement l'outil de gestion de parc et de tickets d'incidents, au cœur du bloc « Support et mise à disposition » — un GLPI non mis à jour exposerait tout l'inventaire du SI. Illustre les activités « Gérer le patrimoine informatique » et « Répondre aux incidents » : inventorier aussi ses propres outils d'administration, les mettre à jour en priorité et ne pas les exposer directement sur Internet. Correctif : passer en 11.0.8 ou 10.0.26.",
+
         // ── Documents ──
         docs_heading: 'Documents &',
         docs_heading_span: 'Synthèse',
@@ -556,6 +560,10 @@ const translations = {
         veille_f3_title: 'Monitoring employee activity — CNIL guidance',
         veille_f3_desc: "The CNIL reminds that any employee monitoring system must be justified and proportionate, avoid constant surveillance, and go through employee representative consultation and prior notice. Directly tied to the RBAC access management and GDPR compliance work I did during my internship.",
 
+        veille_f4_date: '07/22/2026',
+        veille_f4_title: 'Multiple vulnerabilities in GLPI (CERT-FR AVI-0909)',
+        veille_f4_desc: "CERT-FR reports 4 vulnerabilities in GLPI (11.0.x < 11.0.8 and < 10.0.26; CVE-2026-45801, -53627, -53628, -55217): loss of data confidentiality and integrity, security-policy bypass. The key point: GLPI is precisely the asset-inventory and incident-ticketing tool at the heart of the \"IT Support and Service Delivery\" block — an unpatched GLPI would expose the whole IT asset inventory. It illustrates the \"Manage IT assets\" and \"Handle incidents\" activities: inventory your own administration tools too, patch them first, and don't expose them directly to the Internet. Fix: upgrade to 11.0.8 or 10.0.26.",
+
         docs_heading: 'Documents &',
         docs_heading_span: 'Summary',
         docs_intro: 'Mandatory documents for the E5 exam.',
@@ -770,7 +778,7 @@ function applyLang(lang) {
 
     setText('[data-i18n="veille_fiches_title"]', 'veille_fiches_title');
     setText('[data-i18n="veille_fiches_notice"]', 'veille_fiches_notice');
-    [1, 2, 3].forEach(n => {
+    [1, 2, 3, 4].forEach(n => {
         ['date', 'title', 'desc'].forEach(k => {
             setText(`[data-i18n="veille_f${n}_${k}"]`, `veille_f${n}_${k}`);
         });
