@@ -68,7 +68,10 @@ window.addEventListener('scroll', () => {
 // TYPING ANIMATION
 // ==========================================
 const multipleText = document.querySelector('.multiple-text');
-const words = (window.getTranslation && window.getTranslation('typing_words')) || ['Étudiant BTS SIO – SISR'];
+// .slice() : on travaille sur une COPIE, jamais sur le tableau du dictionnaire.
+// Sans ça, applyLang (words.length=0 / push) écraserait translations.fr.typing_words
+// avec les mots anglais → le titre resterait en anglais après un aller-retour FR→EN→FR.
+const words = ((window.getTranslation && window.getTranslation('typing_words')) || ['Étudiant BTS SIO – SISR']).slice();
 let wordIndex  = 0;
 let charIndex  = 0;
 let isErasing  = false;
