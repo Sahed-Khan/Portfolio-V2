@@ -144,6 +144,7 @@ const translations = {
         swot_opportunites_p: "Forte demande de formation et de reconversion vers les métiers du numérique, essor du cloud et de la cybersécurité, montée en puissance de l'offre autour de l'IA.",
         swot_menaces: 'Menaces',
         swot_menaces_p: "Concurrence des plateformes de formation en ligne (MOOC) et des organismes agréés, évolution rapide des technologies imposant une mise à jour continue des contenus.",
+        entreprise_fiche_btn: 'Consulter une fiche de mission détaillée (format E5)',
 
         // ── Missions ──
         missions_heading: 'Mes',
@@ -261,7 +262,10 @@ const translations = {
         doc2_desc: 'CV à jour au format PDF.',
         doc3_title: 'Attestations de stage',
         doc3_desc: "À ajouter dès réception (signées par l'entreprise).",
+        doc4_title: 'Fiche de mission (E5)',
+        doc4_desc: 'Fiche de mission détaillée au format BTS SIO — stage Caplogy & Novatiel.',
         doc_download: 'Télécharger',
+        doc_view: 'Consulter',
         doc_pending: 'À venir',
 
         conclusion_heading: 'Conclusion &',
@@ -439,6 +443,7 @@ const translations = {
         swot_opportunites_p: 'Strong demand for digital training and career conversion, growth of cloud and cybersecurity, rising demand around AI training offerings.',
         swot_menaces: 'Threats',
         swot_menaces_p: 'Competition from online learning platforms (MOOCs) and accredited training bodies, fast-moving technologies requiring continuous content updates.',
+        entreprise_fiche_btn: 'View a detailed mission sheet (E5 format)',
 
         missions_heading: 'My',
         missions_heading_span: 'Missions',
@@ -552,7 +557,10 @@ const translations = {
         doc2_desc: 'Up-to-date CV in PDF format.',
         doc3_title: 'Internship Certificates',
         doc3_desc: 'To be added once received (signed by the company).',
+        doc4_title: 'Mission sheet (E5)',
+        doc4_desc: 'Detailed mission sheet in the BTS SIO format — Caplogy & Novatiel internship.',
         doc_download: 'Download',
+        doc_view: 'View',
         doc_pending: 'Coming soon',
 
         conclusion_heading: 'Conclusion &',
@@ -708,6 +716,7 @@ function applyLang(lang) {
         setText(`[data-i18n="swot_${k}"]`, `swot_${k}`);
         setText(`[data-i18n="swot_${k}_p"]`, `swot_${k}_p`);
     });
+    setText('[data-i18n="entreprise_fiche_btn"]', 'entreprise_fiche_btn');
 
     // Missions
     setText('[data-i18n="missions_heading"]', 'missions_heading');
@@ -762,11 +771,12 @@ function applyLang(lang) {
     setText('[data-i18n="docs_heading"]', 'docs_heading');
     setText('[data-i18n="docs_heading_span"]', 'docs_heading_span');
     setText('[data-i18n="docs_intro"]', 'docs_intro');
-    [1,2,3].forEach(n => {
+    [1,2,3,4].forEach(n => {
         setText(`[data-i18n="doc${n}_title"]`, `doc${n}_title`);
         setText(`[data-i18n="doc${n}_desc"]`, `doc${n}_desc`);
     });
     document.querySelectorAll('[data-i18n="doc_download"]').forEach(el => el.textContent = t['doc_download'] ?? el.textContent);
+    document.querySelectorAll('[data-i18n="doc_view"]').forEach(el => el.textContent = t['doc_view'] ?? el.textContent);
     document.querySelectorAll('[data-i18n="doc_pending"]').forEach(el => el.textContent = t['doc_pending'] ?? el.textContent);
 
     setText('[data-i18n="conclusion_heading"]', 'conclusion_heading');
