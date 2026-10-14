@@ -472,74 +472,20 @@
     <!-- Projects -->
     <section class="projects" id="projects">
         <h2 class="heading"><span data-i18n="projects_heading">Mes</span> <span data-i18n="projects_heading_span">Projets Techniques</span></h2>
-        <p class="section-intro" data-i18n="projects_intro">Projets académiques et personnels réalisés dans le cadre de ma formation.</p>
+        <p class="section-intro" data-i18n="projects_intro">Projets liés au bloc « Support et mise à disposition de services informatiques ».</p>
+        <p class="notice-banner" data-i18n="projects_notice">⚠️ Projets en cours d'ajout.</p>
         <div class="projects-container">
-
+            <!-- Projets bloc 1 à ajouter ici. Modèle de carte :
             <div class="project-card">
-                <div class="project-icon"><i class='bx bx-network-chart'></i></div>
-                <h3 data-i18n="proj1_title">Infrastructure réseau multi-sites</h3>
-                <span class="project-tag" data-i18n="proj1_tag">Cisco Packet Tracer</span>
-                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj1_contexte">Interconnecter 3 sites, segmenter le trafic par VLAN et sécuriser les échanges entre services.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj1_moyens">VLAN, routage inter-VLAN, DHCP, DNS, ACL, adressage IP (VLSM), OSPF.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj1_resultats">3 sites interconnectés, trafic filtré et adressage IP structuré et évolutif.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj1_autocritique">Pourrait être enrichi avec de la haute disponibilité (HSRP/VRRP).</p></div>
-                <a href="assets/rapport_infra_multisites.pdf" class="btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="view_pdf">Voir le PDF</span></a>
+                <div class="project-icon"><i class='bx bx-wrench'></i></div>
+                <h3 data-i18n="proj1_title">Titre du projet</h3>
+                <span class="project-tag" data-i18n="proj1_tag">Technologies</span>
+                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj1_contexte">…</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj1_moyens">…</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj1_resultats">…</p></div>
+                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj1_autocritique">…</p></div>
             </div>
-
-            <div class="project-card">
-                <div class="project-icon"><i class='bx bx-cloud'></i></div>
-                <h3 data-i18n="proj2_title">Infrastructure cloud privée supervisée</h3>
-                <span class="project-tag" data-i18n="proj2_tag">VMware / Ubuntu Server</span>
-                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj2_contexte">Déployer un cloud privé auto-hébergé et sécuriser l'accès de bout en bout.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj2_moyens">Nextcloud, reverse proxy Nginx, SSL/TLS, Fail2ban, MFA/TOTP, supervision Zabbix.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj2_resultats">Accès chiffré et supervisé, blocage automatique des tentatives de brute-force.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj2_autocritique">À enrichir avec une sauvegarde externalisée automatisée.</p></div>
-                <a href="assets/rapport_cloud_prive.pdf" class="btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="view_pdf">Voir le PDF</span></a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon"><i class='bx bx-shield-quarter'></i></div>
-                <h3 data-i18n="proj3_title">Environnement virtualisé sécurisé</h3>
-                <span class="project-tag" data-i18n="proj3_tag">VMware / pfSense / Kali</span>
-                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj3_contexte">Déployer un contrôleur de domaine et un pare-feu périmétrique, puis valider leur sécurité.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj3_moyens">Active Directory (utilisateurs, GPO), pfSense (filtrage, NAT, VPN), tests d'intrusion Kali Linux.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj3_resultats">Domaine fonctionnel avec GPO appliquées et périmètre réseau filtré et audité.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj3_autocritique">À approfondir avec un IDS/IPS en complément du pare-feu.</p></div>
-                <a href="assets/rapport_env_securise.pdf" class="btn" target="_blank"><i class='bx bx-download'></i> <span data-i18n="view_pdf">Voir le PDF</span></a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon"><i class='bx bx-search-alt-2'></i></div>
-                <h3 data-i18n="proj4_title">Alternance Radar</h3>
-                <span class="project-tag" data-i18n="proj4_tag">Cloudflare Workers / IA</span>
-                <div class="project-detail"><strong data-i18n="proj_field_contexte">Contexte / Objectifs</strong><p data-i18n="proj4_contexte">Automatiser la recherche d'alternance BTS SIO SISR : scraper, filtrer et scorer les offres pertinentes.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_moyens">Moyens utilisés</strong><p data-i18n="proj4_moyens">Cloudflare Workers (Hono, TypeScript), D1, KV, IA Llama 3.3 70B pour le scoring, scraping API France Travail, cron automatique.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_resultats">Résultats</strong><p data-i18n="proj4_resultats">Offres scrapées et filtrées automatiquement toutes les 4h, écoles/CFA écartés par l'IA, génération de CV et lettres de motivation optimisés ATS.</p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_autocritique">Auto-critique</strong><p data-i18n="proj4_autocritique">Une source d'offres encore instable à stabiliser ; interface d'administration à compléter.</p></div>
-                <a href="https://github.com/Sahed-Khan/Alternace-radar" class="btn" target="_blank"><i class='bx bxl-github'></i> <span data-i18n="view_repo">Voir sur GitHub</span></a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon"><i class='bx bx-cube-alt'></i></div>
-                <h3 data-i18n="proj5_title"></h3>
-                <span class="project-tag" data-i18n="proj5_tag"></span>
-                <div class="project-detail"><strong data-i18n="proj_field_contexte"></strong><p data-i18n="proj5_contexte"></p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_moyens"></strong><p data-i18n="proj5_moyens"></p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_resultats"></strong><p data-i18n="proj5_resultats"></p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_autocritique"></strong><p data-i18n="proj5_autocritique"></p></div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon"><i class='bx bx-lock-alt'></i></div>
-                <h3 data-i18n="proj6_title"></h3>
-                <span class="project-tag" data-i18n="proj6_tag"></span>
-                <div class="project-detail"><strong data-i18n="proj_field_contexte"></strong><p data-i18n="proj6_contexte"></p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_moyens"></strong><p data-i18n="proj6_moyens"></p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_resultats"></strong><p data-i18n="proj6_resultats"></p></div>
-                <div class="project-detail"><strong data-i18n="proj_field_autocritique"></strong><p data-i18n="proj6_autocritique"></p></div>
-                <a href="https://github.com/Sahed-Khan/Portfolio-V2" class="btn" target="_blank" rel="noopener"><i class='bx bxl-github'></i> <span data-i18n="view_repo">Voir sur GitHub</span></a>
-            </div>
-
+            -->
         </div>
     </section>
 

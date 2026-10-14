@@ -183,7 +183,8 @@ const translations = {
         // ── Projets techniques ──
         projects_heading: 'Mes',
         projects_heading_span: 'Projets Techniques',
-        projects_intro: "Projets académiques et personnels — de l'infrastructure réseau classique vers l'automatisation et la sécurité des déploiements.",
+        projects_intro: "Projets liés au bloc « Support et mise à disposition de services informatiques ».",
+        projects_notice: "⚠️ Projets en cours d'ajout.",
         proj_field_contexte: 'Contexte / Objectifs',
         proj_field_moyens: 'Moyens utilisés',
         proj_field_resultats: 'Résultats',
@@ -483,7 +484,8 @@ const translations = {
 
         projects_heading: 'My',
         projects_heading_span: 'Technical Projects',
-        projects_intro: "Academic and personal projects — from classic network infrastructure toward automated, secure deployments.",
+        projects_intro: 'Projects related to the "IT Support and Service Delivery" block.',
+        projects_notice: '⚠️ Projects being added.',
         proj_field_contexte: 'Context / Objectives',
         proj_field_moyens: 'Resources used',
         proj_field_resultats: 'Results',
@@ -745,6 +747,7 @@ function applyLang(lang) {
     setText('[data-i18n="projects_heading"]', 'projects_heading');
     setText('[data-i18n="projects_heading_span"]', 'projects_heading_span');
     setText('[data-i18n="projects_intro"]', 'projects_intro');
+    setText('[data-i18n="projects_notice"]', 'projects_notice');
     ['contexte','moyens','resultats','autocritique'].forEach(k => {
         document.querySelectorAll(`[data-i18n="proj_field_${k}"]`).forEach(el => el.textContent = t[`proj_field_${k}`] ?? el.textContent);
     });
