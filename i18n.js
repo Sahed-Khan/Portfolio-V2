@@ -236,7 +236,7 @@ const translations = {
         // ── Veille technologique ──
         veille_heading: 'Veille',
         veille_heading_span: 'Technologique',
-        veille_intro: "Suivi continu de l'actualité cybersécurité, infrastructure et RGPD, lue sous l'angle DevSecOps : vulnérabilités à patcher dans les images et les systèmes, surfaces d'attaque web, conformité des accès.",
+        veille_intro: "Suivi de l'actualité sécurité et infrastructure, lue sous l'angle du support et de la mise à disposition de services : vulnérabilités à corriger, continuité de service, gestion du parc et des incidents.",
         veille_cat1_title: 'Cybersécurité & Alertes',
         veille_cat2_title: 'Piratage & Threat Intelligence',
         veille_cat5_title: 'RGPD & Vie Privée',
@@ -540,7 +540,7 @@ const translations = {
 
         veille_heading: 'Technology',
         veille_heading_span: 'Watch',
-        veille_intro: "Ongoing watch on cybersecurity, infrastructure and GDPR news, read through a DevSecOps lens: vulnerabilities to patch in images and systems, web attack surfaces, access compliance.",
+        veille_intro: 'Monitoring of security and infrastructure news, read from a support and service-delivery angle: vulnerabilities to patch, service continuity, asset and incident management.',
         veille_cat1_title: 'Cybersecurity & Alerts',
         veille_cat2_title: 'Hacking & Threat Intelligence',
         veille_cat5_title: 'GDPR & Privacy',
