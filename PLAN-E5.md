@@ -7,7 +7,7 @@ Le site est 100 % autonome : aucune ressource externe (icônes, polices et CSP e
 
 | Plan | Solution | Prérequis | Risque |
 |---|---|---|---|
-| A | Cloudflare Pages — https://sahed-portfolio.pages.dev | Internet | Panne réseau / Cloudflare |
+| A | Cloudflare Pages — https://portfolio.sahedkhan.dev | Internet | Panne réseau / Cloudflare |
 | B | Docker (nginx:alpine) en local | Docker Desktop démarré, image `portfolio-v2:e5` chargée | Docker/WSL2 lent ou KO |
 | C | `python -m http.server` | Python | Aucun (dernier recours) |
 | Bonus | Kubernetes (cluster kubeadm sur VM) | VM démarrée + réseau | Démo de valorisation uniquement, jamais en secours |
