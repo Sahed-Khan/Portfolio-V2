@@ -8,6 +8,7 @@ const translations = {
     fr: {
         nav_home: 'Accueil',
         nav_parcours: 'Parcours',
+        nav_savoirs: 'Savoirs',
         nav_competences: 'Compétences',
         nav_entreprise: 'Entreprise',
         nav_missions: 'Missions',
@@ -55,9 +56,12 @@ const translations = {
         bts_sisr_p: '"Solutions d\'Infrastructure, Systèmes et Réseaux" — installation, administration et sécurisation des infrastructures IT : configuration réseau, gestion de serveurs, supervision des systèmes, sécurité des services numériques.',
 
         // ── Compétences ──
+        savoirs_heading: 'Mes',
+        savoirs_heading_span: 'Savoirs',
+        savoirs_intro: "Les connaissances techniques que je construis au service de mon projet professionnel : devenir <strong>ingénieur DevSecOps</strong> — automatiser les infrastructures et intégrer la sécurité à chaque étape.",
         competences_heading: 'Mes',
         competences_heading_span: 'Compétences',
-        competences_intro: "Compétences techniques et activités du bloc <strong>« Support et mise à disposition de services informatiques »</strong> (Épreuve E5), illustrées par mes projets et mon stage.",
+        competences_intro: "Compétences du bloc <strong>« Support et mise à disposition de services informatiques »</strong> (épreuve E5), mises en œuvre en stage et en projet.",
         skill_devsecops_title: "DevSecOps & automatisation",
         skill_devsecops_p: "<strong>CI/CD GitHub Actions</strong>, <strong>Docker, Kubernetes</strong>, gestion des secrets, moindre privilège (RBAC), sécurité applicative (<strong>OWASP</strong>), déploiement serverless Cloudflare (Workers, Pages).",
         skill_net_title: 'Réseaux',
@@ -153,7 +157,7 @@ const translations = {
         missions_heading: 'Mes',
         missions_heading_span: 'Missions',
         missions_entreprise_title: 'Missions réalisées en entreprise',
-        missions_entreprise_notice: "Stage de 1re année réalisé en 2026 — missions de supervision, de fiabilisation de conteneurs et de sécurité, rattachées aux activités du référentiel SISR.",
+        missions_entreprise_notice: "Stage de 1re année réalisé en 2026 — missions de supervision, de fiabilisation de conteneurs et de sécurité, rattachées aux compétences de l'épreuve E5 (bloc « Support et mise à disposition de services informatiques »).",
         mission_field_objectifs: 'Objectifs',
         mission_field_moyens: 'Moyens utilisés',
         mission_field_resultats: 'Résultats obtenus',
@@ -163,20 +167,20 @@ const translations = {
         mission1_moyens: "Conteneurs déployés sur Kubernetes, Wazuh (manager, indexer, dashboard), Splunk, pile ELK (Elasticsearch), surveillance d'intégrité des fichiers (FIM), analyse des journaux de démarrage et d'exécution.",
         mission1_resultats: "Laboratoires SIEM opérationnels de bout en bout ; détection confirmée (un fichier malveillant déposé déclenche la règle Wazuh 554) ; authentification Splunk et cluster Elasticsearch validés.",
         mission1_difficultes: "Services qui ne démarrent pas seuls au boot, verrou de migration du tableau de bord OpenSearch, compte admin Splunk non créé par défaut — diagnostiqués par lecture méthodique des journaux.",
-        mission1_competences: "Exploiter, dépanner et superviser une solution d'infrastructure (référentiel SISR) : supervision, détection et analyse d'incidents, lecture de journaux.",
+        mission1_competences: "E5 — Gérer le patrimoine informatique : vérifier les conditions de la continuité d'un service. Répondre aux incidents : traiter des demandes concernant les services réseau et système.",
         mission1_title: "Mise en service et supervision de laboratoires SIEM",
         mission2_title: "Fiabilisation des images Docker d'une plateforme de labs cybersécurité",
         mission2_objectifs: "Tester, diagnostiquer et réparer les 26 images Docker d'une plateforme de labs pédagogiques en cybersécurité (Splunk, Wazuh, pfSense, Kali, OSINT, cryptographie…) avant leur publication.",
         mission2_moyens: "Docker / BuildKit, cluster Kubernetes de test, registre d'images local, kubectl port-forward, lecture des journaux de build et d'exécution, procédure de test identique pour chaque image.",
         mission2_resultats: "26 images sur 26 reconstruites, testées de bout en bout (build, exécution, déploiement Kubernetes) et livrées à l'équipe pour publication.",
         mission2_difficultes: "Des pannes systémiques communes à plusieurs images : clés GPG de dépôts expirées (signatures de paquets refusées), variable HOME incorrecte, module Python retiré en 3.13, trousseau gnome-keyring inutilisable sous Kubernetes.",
-        mission2_competences: "Installer, tester et déployer une solution d'infrastructure (référentiel SISR) : sécurité de la chaîne d'approvisionnement logicielle, méthode de test reproductible, débogage de conteneurs et de déploiements Kubernetes.",
+        mission2_competences: "E5 — Gérer le patrimoine informatique : recenser et identifier les ressources numériques. Travailler en mode projet : planifier les activités. Mettre à disposition un service : réaliser les tests d'intégration et d'acceptation, déployer un service.",
         mission3_title: "Audit de sécurité d'une application web interne",
         mission3_objectifs: "Relire le code d'une application web serverless avant sa passation et identifier les risques de sécurité et d'exploitation.",
         mission3_moyens: "Revue de code guidée par l'OWASP Top 10 (contrôle d'accès, authentification, gestion des secrets), analyse des scripts de déploiement, rédaction d'une documentation technique de passation.",
         mission3_resultats: "Faille de contrôle d'accès (IDOR) corrigée ; points de durcissement remontés à l'équipe (gestion des secrets, limitation de débit sur l'authentification, séparation stricte des environnements de déploiement) ; documentation technique remise.",
         mission3_difficultes: "Prioriser les correctifs sans bloquer les livraisons, et expliquer des risques techniques à des interlocuteurs non spécialistes.",
-        mission3_competences: "Développer la présence en ligne et traiter les incidents de sécurité (référentiel SISR) : sécurité applicative, contrôle d'accès, sécurisation de la chaîne de déploiement, communication des risques.",
+        mission3_competences: "E5 — Gérer le patrimoine informatique : mettre en place et vérifier les niveaux d'habilitation associés à un service. Répondre aux incidents et aux demandes d'évolution : traiter des demandes concernant les applications.",
         missions_conclusion_title: 'Conclusion sur les missions',
         missions_conclusion_p: "Ce stage m'a fait passer d'environnements pédagogiques à une infrastructure réelle, où rapidité de livraison et sécurité doivent coexister. Automatiser les déploiements, fiabiliser les images de conteneurs et auditer le code avant la mise en production : c'est exactement le quotidien d'un ingénieur DevSecOps, et ce qui a fixé mon projet professionnel.",
 
@@ -319,6 +323,7 @@ const translations = {
     en: {
         nav_home: 'Home',
         nav_parcours: 'Journey',
+        nav_savoirs: 'Knowledge',
         nav_competences: 'Skills',
         nav_entreprise: 'Company',
         nav_missions: 'Missions',
@@ -363,9 +368,12 @@ const translations = {
         bts_sisr_badge: 'My track',
         bts_sisr_p: '"Infrastructure, Systems and Network Solutions" — installing, administering, and securing IT infrastructures: network configuration, server management, system monitoring, digital services security.',
 
+        savoirs_heading: 'My',
+        savoirs_heading_span: 'Knowledge',
+        savoirs_intro: "The technical knowledge I am building for my career goal: becoming a <strong>DevSecOps engineer</strong> — automating infrastructure and building security into every stage.",
         competences_heading: 'My',
         competences_heading_span: 'Skills',
-        competences_intro: 'Technical skills and activities of the <strong>"IT Support and Service Delivery"</strong> block (E5 exam), illustrated by my projects and internship.',
+        competences_intro: 'Skills of the <strong>"IT Support and Service Delivery"</strong> block (E5 exam), applied during my internship and projects.',
         skill_devsecops_title: "DevSecOps & automation",
         skill_devsecops_p: "<strong>GitHub Actions CI/CD</strong>, <strong>Docker, Kubernetes</strong>, secrets management, least privilege (RBAC), application security (<strong>OWASP</strong>), Cloudflare serverless deployment (Workers, Pages).",
         skill_net_title: 'Networking',
@@ -459,7 +467,7 @@ const translations = {
         missions_heading: 'My',
         missions_heading_span: 'Missions',
         missions_entreprise_title: 'Missions carried out on-site',
-        missions_entreprise_notice: "First-year internship completed in 2026 — monitoring, container hardening and security missions, mapped to the SISR curriculum activities.",
+        missions_entreprise_notice: "First-year internship completed in 2026 — monitoring, container hardening and security missions, mapped to the E5 exam skills (“IT Support and Service Delivery” block).",
         mission_field_objectifs: 'Objectives',
         mission_field_moyens: 'Resources used',
         mission_field_resultats: 'Results achieved',
@@ -469,20 +477,20 @@ const translations = {
         mission1_moyens: 'Containers deployed on Kubernetes, Wazuh (manager, indexer, dashboard), Splunk, the ELK stack (Elasticsearch), file integrity monitoring (FIM), analysis of startup and runtime logs.',
         mission1_resultats: 'SIEM labs working end to end; detection confirmed (a planted malicious file triggers Wazuh rule 554); Splunk authentication and the Elasticsearch cluster validated.',
         mission1_difficultes: 'Services not starting on their own at boot, an OpenSearch Dashboards migration lock, no Splunk admin account created by default — all diagnosed through methodical log reading.',
-        mission1_competences: 'Operate, troubleshoot and monitor an infrastructure solution (SISR curriculum): monitoring, incident detection and analysis, log reading.',
+        mission1_competences: 'E5 — Manage IT assets: check the conditions for service continuity. Handle incidents: process requests about network and system services.',
         mission1_title: 'Commissioning and monitoring SIEM labs',
         mission2_title: "Hardening the Docker images of a cybersecurity lab platform",
         mission2_objectifs: "Test, diagnose and fix the 26 Docker images of a cybersecurity training lab platform (Splunk, Wazuh, pfSense, Kali, OSINT, cryptography…) before release.",
         mission2_moyens: "Docker / BuildKit, test Kubernetes cluster, local image registry, kubectl port-forward, build and runtime log analysis, the same test procedure for every image.",
         mission2_resultats: "26 out of 26 images rebuilt, tested end to end (build, run, Kubernetes deployment) and handed over to the team for release.",
         mission2_difficultes: "Systemic failures shared across images: expired repository GPG keys (package signatures rejected), wrong HOME variable, a Python module removed in 3.13, gnome-keyring unusable under Kubernetes.",
-        mission2_competences: "Install, test and deploy an infrastructure solution (SISR curriculum): software supply chain security, reproducible testing method, container and Kubernetes deployment debugging.",
+        mission2_competences: "E5 — Manage IT assets: inventory and identify digital resources. Work in project mode: plan activities. Deliver a service: run integration and acceptance tests, deploy a service.",
         mission3_title: "Security audit of an internal web application",
         mission3_objectifs: "Review the code of a serverless web application before handover and identify security and operational risks.",
         mission3_moyens: "Code review guided by the OWASP Top 10 (access control, authentication, secrets management), deployment script analysis, technical handover documentation.",
         mission3_resultats: "Access control flaw (IDOR) fixed; hardening points reported to the team (secrets management, login rate limiting, strict separation of deployment environments); technical documentation delivered.",
         mission3_difficultes: "Prioritizing fixes without blocking releases, and explaining technical risks to non-specialists.",
-        mission3_competences: "Build online presence and handle security incidents (SISR curriculum): application security, access control, deployment pipeline security, risk communication.",
+        mission3_competences: "E5 — Manage IT assets: set up and check the access levels of a service. Handle incidents and evolution requests: process requests about applications.",
         missions_conclusion_title: 'Conclusion on missions',
         missions_conclusion_p: "This internship moved me from academic labs to real infrastructure, where delivery speed and security have to coexist. Automating deployments, hardening container images and auditing code before production: that is the daily work of a DevSecOps engineer, and what settled my career plan.",
 
@@ -641,7 +649,7 @@ function applyLang(lang) {
 
     // Navbar
     const navLinks = document.querySelectorAll('.navbar a');
-    const navKeys = ['nav_home','nav_parcours','nav_competences','nav_entreprise','nav_missions','nav_projects','nav_veille','nav_docs','nav_contact'];
+    const navKeys = ['nav_home','nav_parcours','nav_savoirs','nav_competences','nav_entreprise','nav_missions','nav_projects','nav_veille','nav_docs','nav_contact'];
     navLinks.forEach((link, i) => { if (navKeys[i]) link.textContent = t[navKeys[i]] ?? link.textContent; });
 
     // Home
@@ -677,6 +685,11 @@ function applyLang(lang) {
     setText('[data-i18n="bts_sisr_title"]', 'bts_sisr_title');
     setText('[data-i18n="bts_sisr_badge"]', 'bts_sisr_badge');
     setText('[data-i18n="bts_sisr_p"]', 'bts_sisr_p');
+
+    // Savoirs
+    setText('[data-i18n="savoirs_heading"]', 'savoirs_heading');
+    setText('[data-i18n="savoirs_heading_span"]', 'savoirs_heading_span');
+    setHTML('[data-i18n="savoirs_intro"]', 'savoirs_intro');
 
     // Compétences
     setText('[data-i18n="competences_heading"]', 'competences_heading');
