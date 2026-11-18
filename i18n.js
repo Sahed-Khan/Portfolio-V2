@@ -649,7 +649,7 @@ function applyLang(lang) {
 
     // Navbar
     const navLinks = document.querySelectorAll('.navbar a');
-    const navKeys = ['nav_home','nav_parcours','nav_savoirs','nav_competences','nav_entreprise','nav_missions','nav_projects','nav_veille','nav_docs','nav_contact'];
+    const navKeys = ['nav_home','nav_parcours','nav_savoirs','nav_competences','nav_entreprise','nav_missions','nav_veille','nav_docs','nav_contact'];
     navLinks.forEach((link, i) => { if (navKeys[i]) link.textContent = t[navKeys[i]] ?? link.textContent; });
 
     // Home
